@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/fav.png" type="image/x-icon">
+    <title>El Núcleo</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/legales.min.css">
+    <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick-theme.css">
+
+
+</head>
+
+
+<body class="nav-transp">
+    <div id="navbar">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container container-log">
+                <a class="navbar-brand" href="./">
+                    <img class="logo-navbar" src="assets/images/logo.png" alt="El Núcleo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn-underline-from-center" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-1">
+                        <a class="nav-link btn-underline-from-center" href="">Servicios</a>
+                        <ul class="p-0 center dropdown_menu dropdown_menu-1">
+                            <li onclick="location.href='./oficina-individual.html';" class="dro dropdown_item-1">Oficina individual</li>
+                            <li onclick="location.href='./puesto-individual.html';" class="dro dropdown_item-2">Puesto individual</li>
+                            <li onclick="location.href='./mesa-compartida.html';" class="dro dropdown_item-3">Mesa compartida</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @@nosotros btn-underline-from-center" href="reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @@nosotros btn-underline-from-center" href="blog.html">Blog</a>
+                    </li>
+
+                    <!-- <li class="nav-item icon-perfil ps-3 pe-0">
+                        <a class="btn-user" href="#">
+                            <img src="assets/images/icons/perfil.svg" alt="user" />
+                        </a>
+                        <div class="popup-login" style="display: none;">
+                            <div class="d-grid p-3">
+                                <a class="btn btn-custom btn-rounded btn-green-white btn-center-out px-0 mb-3" href="">Iniciar Sesión</a>
+                                <a class="btn btn-custom btn-rounded btn-green-white btn-center-out px-0" href="">Registrarse</a>
+                            </div>
+                        </div>
+                    </li>-->
+
+                </ul>
+            </div>
+            <div class="gradient login-nav p-2">
+                <a class=" d-flex align-items-center" href="./login.html">
+                    <img src="assets/images/perfil.svg" alt="user" />
+                    <p class="mb-0 text-white">Log In</p>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="navbar-mobile" class="navbar-mobil">
+        <div class="container">
+            <div class="menu">
+                <div class="text-start">
+                    <button id="open" class="btn-menu">
+            <img src="assets/images/icons/menu.png" alt="menu">
+          </button>
+                </div>
+                <div class="text-center">
+                    <img class="img-logo" src="assets/images/logardo.svg" alt="logo">
+                </div>
+                <div class="text-end icon-perfil position-relative">
+                    <a class="btn-shopping-cart btn-user position-relative" href="#">
+                        <img class="img-icons" src="assets/images/perfil.svg" alt="" />
+
+                    </a>
+                    <div id="popup-logi" class="popup-login" style="display: none;">
+                        <div class="d-flex flex-column justify-content-between align-items-center p-3">
+                            <a class="btn mb-3 w-100 btn-rounded btn-blue-white btn-center-out" href="./login.html">Iniciar Sesión</a>
+                            <a class="btn w-100 btn-rounded btn-pink-white btn-center-out" href="./register.html">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-open">
+                <div id="close" class="icon-close">
+                    <img src="assets/images/icons/x.png" alt="close">
+                </div>
+                <div class="contenedor-menu">
+                    <p class="title-menu">Menu</p>
+                    <ul class="list-menu">
+                        <li class="">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Servicios
+                      </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="./oficina-individual.html" class="items-menu">Oficina individual</a>
+                                            </li>
+                                            <li>
+                                                <a href="./puesto-individual.html" class="items-menu">Puesto individual</a>
+                                            </li>
+                                            <li>
+                                                <a href="./mesa-compartida.html" class="items-menu">Mesa compartida</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a class="" href="reservas.html">Reservas</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="blog.html">Blog</a>
+                        </li>
+                        <div class="row my-4">
+                            <div class="col-12 text-center">
+                                <a class="w-75 btn btn-custom btn-rounded btn-blue-white btn-center-out mb-3" href="./login.html">Iniciar sesión</a>
+
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="w-75 btn btn-custom btn-rounded btn-pink-white btn-center-out" href="./register.html">Registrarme</a>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class=" my-4 text-center">
+                        <img class="" src="assets/images/logardo.svg" alt="logo">
+                    </div>
+                    <div class="redes-menu">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/fa.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/ig.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/yt.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img id="trip" src="assets/images/tr.svg" alt="tripadvisor">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--  <div id="redes" class="mb-4 justify-content-center">
+                        <a class="" href="">
+                            <div class="red fb">
+                                <img src="assets/images/fa.svg" alt="facebook">
+                            </div>
+                        </a>
+                        <a class="mx-1" href="">
+                            <div class="red ig">
+                                <img src="assets/images/ig.svg" alt="instagram">
+                            </div>
+                        </a>
+                        <a class="mx-1" href="">
+                            <div class="red yt">
+                                <img src="assets/images/yt.svg" alt="Youtube">
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="red ta">
+                                <img src="assets/images/tr.svg" alt="tripadvisor">
+                            </div>
+                        </a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="section-welcome">
+            <div class="container d-none d-xl-block">
+                <div class="row">
+                    <div class="col-text col-12 d-flex flex-column align-items-center justify-content-center">
+                        <p class="mb-1 title text-center">Política de cookies</p>
+                        <!--   <p class="mb-4 sub text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.-->
+                        </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-legal pb-5">
+
+            <div class="container-fluid container-xl p-3 p-md-5 content">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mb-4 title text-center d-block d-xl-none">Política de cookies y almacenamiento local</p>
+                       
+
+                        <p class="text">Este sitio web utiliza cookies y tecnologías similares para proporcionar el servicio, así como permitirnos mejorarlo, a través de la obtención de estadísticas sobre su uso, y otras finalidades.</p>
+                        <p class="text">Navegar por esta web implica necesariamente la utilización de cookies y tecnologías similares siempre y cuando sea necesario para su funcionamiento. Asimismo, para ciertas finalidades, las cookies y el almacenamiento local estarán
+                            sujetas a su previo consentimiento. Puede aceptar o rechazar las cookies mediante el sistema de configuración establecido y también es posible configurar el navegador para impedir su uso.</p>
+                        <p class="text">Esta política forma parte de nuestra política de privacidad e incluye lo siguiente:</p>
+                        <ul>
+                            <li>¿Qué son las cookies?</li>
+
+                            <li>¿Para qué se usan las cookies?</li>
+
+                            <li>¿Qué entendemos por tecnologías similares a las cookies?</li>
+
+                            <li>¿Qué son las cookies de terceros? ¿Quiénes son los destinatarios de la información?</li>
+
+                            <li>¿Durante cuánto tiempo se mantienen activas las cookies o tecnologías similares?</li>
+
+                            <li>Uso de navegadores con modo de navegación privada</li>
+
+                            <li>¿Cómo impedir el uso de cookies y cómo borrarlas?</li>
+
+                            <li>Información detallada sobre las cookies utilizadas por este sitio web</li>
+                        </ul>
+
+
+                        <p class="sub">¿Qué son las cookies?</p>
+                        <p class="text">Las “cookies” son pequeños ficheros temporales que se crean en el dispositivo del usuario (ordenador, teléfono, tableta, etc.) cuando visita una web, y que permiten a la misma almacenar o recuperar información cuando navega, por
+                            ejemplo, para guardar sus preferencias de uso o para reconocerlo en posteriores visitas, así como obtener información sobre sus hábitos de navegación.</p>
+                        <p class="text">Cuando una web crea una cookie en el dispositivo del usuario, se almacena la dirección/dominio de la web que ha creado la cookie, la duración de la cookie que puede ir de escasos minutos a varios años, así como el contenido de
+                            la cookie. El usuario puede deshabilitar las cookies en todo momento mediante el sistema de configuración de este sitio web, así como configurar su programa de navegación para impedir (bloquear) el uso de cookies por parte
+                            de determinadas webs, así como borrar las cookies almacenadas previamente.</p>
+
+                        <p class="sub">¿Para qué se usan las cookies?</p>
+                        <p class="text">Los usos o finalidades más habituales son:</p>
+                        <ul>
+                            <li>Cookies técnicas esenciales. Se utilizan para gestionar el flujo de navegación dentro de la web o para mantener al usuario conectado a la misma. Al deshabilitarlas, es po-sible que algún apartado de la web no funcione correctamente.</li>
+
+                            <li>Cookies de personalización. Necesarias para recordar determinadas preferencias del usuario.</li>
+
+                            <li>Cookies analíticas. Nos ayudan a nosotros y a terceros a recopilar información de la procedencia de los usuarios y su navegación dentro de la web, a efectos de realizar un análisis estadístico para poder mejorar la estructura
+                                y los contenidos.</li>
+
+                            <li>Cookies publicitarias. Utilizadas para gestionar los anuncios que aparecen en la web, decidir el contenido o la frecuencia de los anuncios.</li>
+
+                            <li>Cookies publicitarias comportamentales. Ayudan a recopilar los hábitos de navega-ción del usuario para crear un perfil de sus intereses y para mostrarle anuncios adap-tados a los mismos.</li>
+
+                            <li>Cookies para compartición social. Son necesarias para identificar al usuario en sus re-des sociales y así permitirle compartir contenidos.</li>
+                        </ul>
+
+
+
+                        <p class="sub">¿Qué son las cookies de terceros? ¿Quiénes son los destinatarios de la información?</p>
+                        <p class="text">Las cookies de esta web se pueden clasificar, en función de quién las crea, en dos categorías:</p>
+                        <ul>
+                            <li><strong>Cookies propias:</strong> se crean y manejan desde nuestros sitios y dominios web, siendo la información obtenida gestionada directa o indirectamente por nosotros para nues-tras propias finalidades.</li>
+
+                            <li><strong>Cookies de terceros:</strong> son las cookies que se crean y se manejan desde otros sitios web que, aunque no están completamente bajo nuestro control, proporcionan fun-ciones y características que hemos decidir incluir
+                                en nuestra web, como, por ejemplo: mapas interactivos, vídeos y elementos multimedia, botones para compartir en redes sociales, anuncios, etc. Estas cookies están bajo el control del tercero que proporcio-na la función
+                                correspondiente.
+                            </li>
+
+
+
+                        </ul>
+                        <p>La gran mayoría de las funciones de terceros implican el acceso o recopilación de información (y el uso de cookies) por parte del tercero que proporciona la función, en base a sus propios criterios y finalidades, incluyendo la
+                            recopilación sobre los hábitos de navegación para mostrarle publicidad personalizada. En el siguiente apartado se indican las funciones y características de terceros utilizadas en esta página web.</p>
+
+
+                        <p class="sub">¿Durante cuánto tiempo se mantienen activas las cookies o tecnologías similares?</p>
+                        <p class="text">En función de su permanencia o tiempo de actividad, podemos diferenciar entre:</p>
+                        <ul>
+                            <li><strong>Cookies temporales de sesión: </strong> permanecen almacenadas en el equipo de navegación hasta que el usuario abandona la página web; el navegador las borra al terminar la se-sión de navegación.</li>
+
+                            <li><strong>Cookies persistentes: </strong> permanecen en el equipo de navegación y la web las lee cada vez que el usuario realiza una nueva visita. Estas cookies se borran automáticamente pasado cierto plazo de tiempo, que puede
+                                ser corto o muy largo.</li>
+
+
+
+
+                        </ul>
+                        <p>En esta política se incluye información sobre la duración de las cookies; para más información, consulte nuestra política de privacidad, así como la información proporcionada en las políticas de privacidad de los terceros proveedores
+                            de funciones web.</p>
+
+
+
+
+
+                        <p class="sub">Uso de navegadores con modo de navegación privada</p>
+                        <p class="text">Si desea usar esta web con mayor grado de privacidad y limitando que las cookies queden almacenadas por plazos largos de tiempo, recomendamos que utilice un navegador web que disponga de una opción de navegación “privada”.</p>
+                        <p class="text">Puede obtener información sobre esta posibilidad en las páginas de ayuda de los navegadores más comunes:</p>
+                        <div class="table-cookies">
+                            <table class="table table-bordered">
+
+                                <tbody>
+                                    <tr>
+
+                                        <th>Navegador</th>
+
+                                        <th>Nombre de la función de navegación privada</th>
+
+                                        <th>Obtener más información</th>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Internet Explorer 8 y superior</td>
+
+                                        <td>Microsoft Edge InPrivate</td>
+
+                                        <td><a class="enlace"href="https://support.microsoft.com/es-es/products/internet-explorer">https://support.microsoft.com/es-es/products/internet-explorer (Explorer)</a>
+
+                                            <a class="enlace"href="https://support.microsoft.com/es-es/instantanswers/34b9a3a6-68bc-510b-2a9e-833107495ee5/browse-inprivate-in-microsoft-edge">https://support.microsoft.com/es-es/instantanswers/34b9a3a6-68bc-510b-2a9e-833107495ee5/browse-inprivate-in-microsoft-edge (Microsoft Edge)</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Safari 2 y superior</td>
+
+                                        <td>Navegación privada</td>
+
+                                        <td><a class="enlace"href="https://support.apple.com/es-es/HT203036">https://support.apple.com/es-es/HT203036</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Opera 10.5 y superior </td>
+
+                                        <td>Navegación privada</td>
+
+                                        <td><a class="enlace"href="http://help.opera.com/Windows/12.00/es-ES/private.html">http://help.opera.com/Windows/12.00/es-ES/private.html</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>FireFox 3.5 y superior</td>
+
+                                        <td>Navegación privada</td>
+
+                                        <td><a class="enlace"href="https://support.mozilla.org/es/kb/navegacion-privada-Firefox-no-guardar-historial-navegacion">https://support.mozilla.org/es/kb/navegacion-privada-Firefox-no-guardar-historial-navegacion</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Google Chrome 10 y superior</td>
+
+                                        <td>Modo incógnito</td>
+
+                                        <td><a class="enlace"href="https://support.google.com/chrome/answer/7005900?rd=1">https://support.google.com/chrome/answer/7005900?rd=1</a></td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <p class="sub">¿Cómo impedir el uso de cookies y cómo borrarlas?</p>
+                        <p class="text">Puede configurar sus preferencias en cualquier momento mediante el sistema de configuración de cookies integrado en este sitio web, podrá activar / desactivar el uso de cookies según sus finalidades.</p>
+                        <p class="text">Puede acceder al sistema de configuración mediante el enlace al pie de la página de inicio o pulsando aquí.</p>
+                        <p class="text">La mayoría de navegadores permiten desactivar globalmente las cookies. Muchos navegadores también permiten borrar las cookies asociadas a webs/dominios concretos. Para ello el usuario debe consultar la ayuda de su navegador. A
+                            continuación, se incluyen enlaces a las páginas de ayuda de los navegadores más habituales para conocer la configuración de cookies en cada uno:</p>
+                        <li>Chrome: <a class="enlace"href="https://support.google.com/chrome/answer/95647?hl=es">https://support.google.com/chrome/answer/95647?hl=es</a></li>
+
+                        <li>Explorer: <a class="enlace"href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies">https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies</a></li>
+
+                        <li>Microsoft Edge: <a class="enlace"href="https://privacy.microsoft.com/es-ES/windows-10-microsoft-edge-and-privacy">https://privacy.microsoft.com/es-ES/windows-10-microsoft-edge-and-privacy</a></li>
+
+                        <li>Firefox: <a class="enlace"href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias">https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias</a></li>
+
+                        <li>Safari: <a class="enlace"href="https://support.apple.com/kb/PH17191?viewlocale=es_ES&amp;locale=es_ES">https://support.apple.com/kb/PH17191?viewlocale=es_ES&amp;locale=es_ES</a></li>
+
+                        <li>Safari para IOS: <a class="enlace"href="https://support.apple.com/es-es/HT201265">https://support.apple.com/es-es/HT201265</a></li>
+
+                        <li>Opera: <a class="enlace"href="https://www.opera.com/es/help">http://www.opera.com/es/help</a></li>
+                        <p></p>
+
+                        <p>Para borrar los datos guardados en el almacenamiento local del navegador, el usuario puede borrar el historial de navegación. Para conocer cómo borrar el almacenamiento local de Flash o para limitar la cantidad de espacio permitido,
+                            consultar las páginas de Ayuda de Adobe: </p>
+
+                        <p></p>
+                        <li><a class="enlace"href="https://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html">http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html</a></li>
+                        <p></p>
+
+                        <p>Para otros navegadores, así como para cualquier aclaración o pregunta sobre las cookies de esta web, puede contactarnos a través de los datos de contacto de la web.</p>
+
+                        <p>Aviso importante: en caso de bloquear las cookies es posible que determinados servicios o funcionalidades de la web no funcionen correctamente.</p>
+
+
+                        <p class="sub">Información detallada sobre las cookies utilizadas por este sitio web</p>
+                        <p class="text">Información sobre las cookies propias:</p>
+                        <li><strong>Cookies funcionales/técnicas:</strong> Necesarias para mostrar correctamente la página web y garantizar el correcto funcionamiento del sitio. Te permiten navegar en nuestro sitio web y utilizar las diferentes opciones o
+                            servicios que tiene. Con ellas podemos, por ejemplo, controlar el tráfico y la comunicación de datos, identificarte durante la se-sión, darte acceso a partes de acceso restringido, y utilizar elementos de seguridad durante
+                            tu navegación.</li>
+
+                        <li><strong>Cookies Analíticas:</strong> Se utilizan para analizar el comportamiento de los usuarios de forma agregada y anónima incluyendo el número de visitantes a la web y a diferentes páginas internas, la procedencia de las visita,
+                            día y hora, plataforma, palabras de bús-queda que utiliza un usuario para encontrar su contenido deseado.</li>
+                        <p></p>
+
+                        <p><strong>Información sobre las Cookies de Terceros:</strong> Son cookies administradas y controladas por Terceros, con la finalidad de reali-zar/proporcionar funcionalidades, realizar análisis de navegación, personalización de la
+                            nave-gación y búsquedas, así como publicidad compartimental.</p>
+
+                        <p>
+                        </p>
+                        <li><strong>Cookies funcionales/técnicas:</strong> Te permiten navegar a través de nuestra página, utili-zando las diferentes opciones o servicios que te ofrecemos como, por ejemplo, vi-sualizar vídeos o compartir contenidos a través
+                            de redes sociales.</li>
+                        <p></p>
+
+                        <div class="table-cookies">
+                            <table class="table table-bordered">
+
+                                <tbody>
+                                    <tr>
+
+                                        <th>Tercero Propietario</th>
+
+                                        <th>Duración</th>
+
+                                        <th>Información sobre el uso y finalidad</th>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>YouTube </td>
+
+                                        <td>Sesión/1 año</td>
+
+                                        <td><a class="enlace"href="https://www.google.es/intl/es/policies/privacy/">https://www.google.es/intl/es/policies/privacy/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Twitter</td>
+
+                                        <td>Sesión/1 año</td>
+
+                                        <td><a class="enlace"href="https://help.twitter.com/es/rules-and-policies/twitter-cookies">https://help.twitter.com/es/rules-and-policies/twitter-cookies</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Facebook</td>
+
+                                        <td>Sesión/1 año</td>
+
+                                        <td><a class="enlace"href="https://es-es.facebook.com/policies/cookies/">https://es-es.facebook.com/policies/cookies/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Instagram</td>
+
+                                        <td>Sesión/1 año</td>
+
+                                        <td><a class="enlace"href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>LinkedIn</td>
+
+                                        <td>Sesión/1 año</td>
+
+                                        <td><a class="enlace"href="https://es.linkedin.com/legal/cookie-policy">https://es.linkedin.com/legal/cookie-policy</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Google Inc</td>
+
+                                        <td>Permanente</td>
+
+                                        <td><a class="enlace"href="https://www.google.es/intl/es/policies/privacy/">https://www.google.es/intl/es/policies/privacy/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Adobe</td>
+
+                                        <td>Sesión/1 año</td>
+
+                                        <td><a class="enlace"href="https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html">https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html</a></td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <p></p>
+                        <li><strong>Cookies de análisis:</strong> Nos ofrecen estos terceros información estadística sobre el com-portamiento de los diferentes usuarios en nuestra página web para introducir mejo-ras en función del análisis de los datos sobre
+                            el uso de productos y/o servicios en la página web.</li>
+                        <p></p>
+
+                        <div class="table-cookies">
+                            <table class="table table-bordered">
+
+                                <tbody>
+                                    <tr>
+
+                                        <th>Tercero Propietario</th>
+
+                                        <th>Duración</th>
+
+                                        <th>Información sobre el uso y finalidad</th>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Google Analytics</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://www.google.com/analytics/tos.html">http://www.google.com/analytics/tos.html</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>YouTube</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://www.google.es/intl/es/policies/privacy/">https://www.google.es/intl/es/policies/privacy/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Facebook</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://es-es.facebook.com/policies/cookies/">https://es-es.facebook.com/policies/cookies/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Hotjar</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://www.hotjar.com/legal/policies/cookie-information">https://www.hotjar.com/legal/policies/cookie-information</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Adobe Analytics</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html">https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>LinkedIn</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://www.google.es/intl/es/policies/privacy/">https://www.google.es/intl/es/policies/privacy/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>TripAdvisor</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://tripadvisor.mediaroom.com/ES-privacy-policy">https://tripadvisor.mediaroom.com/ES-privacy-policy</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Yahoo</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_73a8316b-ba20-49ca-8542-3cc976f99c51">https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_73a8316b-ba20-49ca-8542-3cc976f99c51</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Adobe Audience Manager</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html">https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Adara Analytics</td>
+
+                                        <td>De 30 minutos a 2 años</td>
+
+                                        <td><a class="enlace"href="http://adara.com/privacy-promise">http://adara.com/privacy-promise</a></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                        <p></p>
+                        <li><strong>Cookies de Publicidad:</strong> Nos permiten la gestión de los espacios publicitarios incluidos en nuestra página web, en base a criterios como el contenido mostrado o la frecuen-cia en la que se muestran los anuncios.</li>
+                        <p></p>
+
+                        <div class="table-cookies">
+                            <table class="table table-bordered">
+
+                                <tbody>
+                                    <tr>
+
+                                        <th>Tercero Propietario</th>
+
+                                        <th>Información sobre el uso y finalidad</th>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Google Adwords</td>
+
+                                        <td><a class="enlace"href="https://www.google.com/intl/es/policies/privacy/">http://www.google.com/intl/es/policies/privacy/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>YouTube</td>
+
+                                        <td><a class="enlace"href="https://www.google.es/intl/es/policies/privacy/">https://www.google.es/intl/es/policies/privacy/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Facebook</td>
+
+                                        <td><a class="enlace"href="https://es-es.facebook.com/policies/cookies/">https://es-es.facebook.com/policies/cookies/</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>Twitter</td>
+
+                                        <td><a class="enlace"href="https://help.twitter.com/es/rules-and-policies/twitter-cookies">https://help.twitter.com/es/rules-and-policies/twitter-cookies</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Yahoo</td>
+
+                                        <td><a class="enlace"href="https://verizonmedia.com/policies/">https://verizonmedia.com/policies/</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Microsoft Advertising</td>
+
+                                        <td><a class="enlace"href="https://privacy.microsoft.com">https://privacy.microsoft.com</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Adara</td>
+
+                                        <td><a class="enlace"href="https://www.adara.com/privacy-promise">https://www.adara.com/privacy-promise</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>AppNexus</td>
+
+                                        <td><a class="enlace"href="https://www.appnexus.com/en/company/plataform.privacy-policy">https://www.appnexus.com/en/company/plataform.privacy-policy</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>TripAdvisor</td>
+
+                                        <td><a class="enlace"href="https://www.tripadvisor.mediaroom.com/ES-privacy_policy">https://www.tripadvisor.mediaroom.com/ES-privacy_policy</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Adobe</td>
+
+                                        <td><a class="enlace"href="https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html">https://docs.adobe.com/content/help/es-ES/core-services/interface/ec-cookies/cookies-privacy.html</a></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>LinkedIn</td>
+
+                                        <td><a class="enlace"href="https://www.google.es/intl/es/policies/privacy/">https://www.google.es/intl/es/policies/privacy/</a></td>
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="barra gradient w-100 d-none d-lg-block"></div>
+        <div class="section-newsletter">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-xl-10 offset-xl-1">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="title wow fadeInDown">¡Sé el primero en enterarte de los grandes eventos!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-9">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="name" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="mail" placeholder="Email">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check wow fadeInDown">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                          <a href="">Acepto los términos y condiciones.</a>
+                        </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 text-center">
+                                    <div class="d-lg-grid">
+                                        <a id="btn-newsletter" class="btn btn-rounded btn-transparent-white btn-center-out px-3 px-lg-0 wow fadeInDown">¡Quiero ser el primero!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="placaNewsletter" style="display: none;"></div>
+
+        </div>
+        <footer>
+            <div class="section-footer1 d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 wow fadeInLeft slow" style="padding-top: calc(5rem - 26px);">
+                            <img class="mb-1 logo" src="assets/images/logo_b.png" alt="logo">
+                            <p class="mb-1">Tu casa, tu coworking, tu Núcleo</p>
+                            <ul class="datos">
+                                <li>
+                                    <a href="https://goo.gl/maps/KPDbkf4dfv6PZNa48" class="items-menu"> <img src="./assets/images/ubi.svg" alt=""> Avenida Alcalde José Ramirez Bethencourt, 13, 35004 Las Palmas de Gran Canaria, España</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+34928231768" class="items-menu"><img src="./assets/images/tel.svg" alt="">+34928231768</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@elnucleo.es" class="items-menu"><img src="./assets/images/mail.svg" alt="">info@elnucleo.es</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-12 col-md-3 col-content wow fadeInLeft slow">
+                            <h4 class="bold">Legal</h4>
+                            <ul>
+                                <li>
+                                    <a href="./terminos.html" class="items-menu">Términos y condiciones</a>
+                                </li>
+                                <li>
+                                    <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                </li>
+                                <li>
+                                    <a href="./politica-de-privacidad.html" class="items-menu">Política de privacidad</a>
+                                </li>
+                                <li>
+                                    <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h4 class="bold">Nosotros</h4>
+                            <ul>
+                                <li>
+                                    <a href="./miembros.html" class="items-menu">Miembros</a>
+                                </li>
+                                <li>
+                                    <a href="./contacto.html" class="items-menu">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html" class="items-menu">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./faqs.html" class="items-menu">Preguntas frecuentes</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 text-center col-content wow fadeInLeft slow">
+                            <h4 class="bold mb-4">Síguenos en:</h4>
+                            <div id="redes" class="mb-4 justify-content-center">
+                                <a class="" href="">
+                                    <div class="red fb">
+                                        <img src="assets/images/r_1.png" alt="facebook">
+                                    </div>
+                                </a>
+                                <a class="mx-1" href="">
+                                    <div class="red ig">
+                                        <img src="assets/images/r_2.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a class="mx-1" href="">
+                                    <div class="red yt">
+                                        <img src="assets/images/r_3.png" alt="Youtube">
+                                    </div>
+                                </a>
+                                <a class="" href="">
+                                    <div class="red ta">
+                                        <img src="assets/images/r_4.png" alt="tripadvisor">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown dropup d-inline-block">
+                                <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div>
+                                        <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                                        <small>Español</small>
+                                    </div>
+                                    <div>
+                                        <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                                    <li><a class="dropdown-item" href="#">Inglés</a></li>
+                                    <li><a class="dropdown-item" href="#">Español</a></li>
+                                    <li><a class="dropdown-item" href="#">Portugues</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section-mobil-footer d-block d-lg-none">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Legal
+              </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./terminos.html" class="items-menu">Términos y condiciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                    </li>
+                                    <li>
+                                        <a href="./politica-de-privacidad.html" class="items-menu">Política de privacidad</a>
+                                    </li>
+                                    <li>
+                                        <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Nosotros
+              </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./miembros.html" class="items-menu">Miembros</a>
+                                    </li>
+                                    <li>
+                                        <a href="./contacto.html" class="items-menu">Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog.html" class="items-menu">Blog</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./faqs.html">Pregutas frecuentes</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <img class="my-4 logo" src="assets/images/logo_b.png" alt="logo">
+                <p class="mb-1">Tu casa, tu coworking, tu Núcleo</p>
+                <ul class="datos">
+                    <li>
+                        <a href="https://goo.gl/maps/KPDbkf4dfv6PZNa48" class="items-menu"> <img src="./assets/images/ubi.svg" alt=""> Avenida Alcalde José Ramirez Bethencourt, 13, 35004 Las Palmas de Gran Canaria, España</a>
+                    </li>
+                    <li>
+                        <a href="tel:+34928231768" class="items-menu"><img src="./assets/images/tel.svg" alt="">+34928231768</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@elnucleo.es" class="items-menu"><img src="./assets/images/mail.svg" alt="">info@elnucleo.es</a>
+                    </li>
+                </ul>
+                <div id="redes" class="mb-4 justify-content-start">
+                    <a class="" href="">
+                        <div class="red fb">
+                            <img src="assets/images/r_1.png" alt="facebook">
+                        </div>
+                    </a>
+                    <a class="mx-1" href="">
+                        <div class="red ig">
+                            <img src="assets/images/r_2.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a class="mx-1" href="">
+                        <div class="red yt">
+                            <img src="assets/images/r_3.png" alt="Youtube">
+                        </div>
+                    </a>
+                    <a class="" href="">
+                        <div class="red ta">
+                            <img src="assets/images/r_4.png" alt="tripadvisor">
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown dropup d-inline-block">
+                    <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                            <small>Español</small>
+                        </div>
+                        <div>
+                            <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                        <li><a class="dropdown-item" href="#">Inglés</a></li>
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">Portugues</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-footer2 gradient">
+                <div class="text-center">
+                    <small>
+            <p class="mb-0 wow fadeIn">
+              &copy; 2022 El Núcleo - Todos los derechos reservados 
+            </p>
+          </small>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/wowjs/wow.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/libs/slick-slider/slick/slick.min.js "></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
+    </script>
+    <script src="assets/js/materialize.min.js"></script>
+
+    <script>
+        var sDuration
+        var sPadding
+        var sNumVisible
+        if ($(window).width() < 768) {
+            sDuration = 300
+            sPadding = 0
+            sNumVisible = 1
+        }
+
+        if ($(window).width() >= 768) {
+            sDuration = 150
+            sPadding = -780
+            sNumVisible = 3
+        }
+        if ($(window).width() >= 1200) {
+            sDuration = 150
+            sPadding = -500
+            sNumVisible = 3
+        }
+
+        console.log(sDuration + ' - ' + sPadding + ' - ' + sNumVisible)
+        document.addEventListener('DOMContentLoaded', function() {
+            const dots = document.querySelectorAll(".slider__dot");
+            let carousel = document.querySelector('.carousel-material');
+            let instances = M.Carousel.init(carousel, {
+                duration: sDuration,
+                padding: sPadding,
+                numVisible: sNumVisible,
+                indicators: false,
+                noWrap: false
+            });
+            let media = document.querySelectorAll('.materialboxed');
+            let instancesMedia = M.Materialbox.init(media, {
+                inDuration: 450,
+                outDuration: 350
+            });
+            let instance = M.Carousel.getInstance(carousel);
+            $('.carousel-material-prev').click(function() {
+                instance.prev();
+            })
+            $('.carousel-material-next').click(function() {
+                instance.next();
+            })
+            for (let dot of dots) {
+
+                dot.addEventListener("click", () => {
+
+                    instance.set(dot.getAttribute("data-pos"))
+                    for (let dot of dots) {
+                        dot.classList.remove("active")
+                    }
+
+                    dot.classList.add("active")
+
+                })
+            }
+        });
+    </script>
+
+    <script>
+        if ($(window).width() < 992) {
+            $('#carrusel-cards').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><img class="" src="assets/images/chevron-left1.svg"/></button>',
+                nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><img class="" src="assets/images/chevron-right1.svg"/></button>',
+
+            });
+        }
+    </script>
+
+</body>
+
+</html>

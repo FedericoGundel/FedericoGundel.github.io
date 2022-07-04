@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./assets/images/fav.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Núcleo</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/login.min.css">
+    <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/reservas.min.css">
+    
+</head>
+
+
+<body class="nav-transp">
+    <div id="navbar">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container container-log">
+                <a class="navbar-brand" href="./">
+                    <img class="logo-navbar" src="assets/images/logo.png" alt="El Núcleo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn-underline-from-center" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-1">
+                        <a class="nav-link btn-underline-from-center" href="">Servicios</a>
+                        <ul class="p-0 center dropdown_menu dropdown_menu-1">
+                            <li onclick="location.href='./oficina-individual.html';" class="dro dropdown_item-1">Oficina individual</li>
+                            <li onclick="location.href='./puesto-individual.html';" class="dro dropdown_item-2">Puesto individual</li>
+                            <li onclick="location.href='./mesa-compartida.html';" class="dro dropdown_item-3">Mesa compartida</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active @@nosotros btn-underline-from-center" href="reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @@nosotros btn-underline-from-center" href="blog.html">Blog</a>
+                    </li>
+
+                    <!-- <li class="nav-item icon-perfil ps-3 pe-0">
+                        <a class="btn-user" href="#">
+                            <img src="assets/images/icons/perfil.svg" alt="user" />
+                        </a>
+                        <div class="popup-login" style="display: none;">
+                            <div class="d-grid p-3">
+                                <a class="btn btn-custom btn-rounded btn-pink-white btn-sm btn-center-out px-0 mb-3" href="">Iniciar Sesión</a>
+                                <a class="btn btn-custom btn-rounded btn-pink-white btn-sm btn-center-out px-0" href="">Registrarse</a>
+                            </div>
+                        </div>
+                    </li>-->
+
+                </ul>
+            </div>
+            <div class="gradient login-nav p-2">
+                <a class=" d-flex align-items-center" href="./login.html">
+                    <img src="assets/images/perfil.svg" alt="user" />
+                    <p class="mb-0 text-white">Log In</p>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="navbar-mobile" class="navbar-mobil">
+        <div class="container">
+            <div class="menu">
+                <div class="text-start">
+                    <button id="open" class="btn-menu">
+            <img src="assets/images/icons/menu.png" alt="menu">
+          </button>
+                </div>
+                <div class="text-center">
+                    <img class="img-logo" src="assets/images/logardo.svg" alt="logo">
+                </div>
+                <div class="text-end icon-perfil position-relative">
+                    <a class="btn-shopping-cart btn-user position-relative" href="#">
+                        <img class="img-icons" src="assets/images/perfil.svg" alt="" />
+
+                    </a>
+                    <div id="popup-logi" class="popup-login" style="display: none;">
+                        <div class="d-flex flex-column justify-content-between align-items-center p-3">
+                            <a class="btn mb-3 w-100 btn-rounded btn-blue-white btn-center-out" href="./login.html">Iniciar Sesión</a>
+                            <a class="btn w-100 btn-rounded btn-pink-white btn-sm btn-center-out" href="./register.html">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-open">
+                <div id="close" class="icon-close">
+                    <img src="assets/images/icons/x.png" alt="close">
+                </div>
+                <div class="contenedor-menu">
+                    <p class="title-menu">Menu</p>
+                    <ul class="list-menu">
+                        <li class="">
+                            <a class="" href="index.html">Inicio</a>
+                        </li>
+                        <li class="">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Servicios
+                      </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="./oficina-individual.html" class="items-menu">Oficina individual</a>
+                                            </li>
+                                            <li>
+                                                <a href="./puesto-individual.html" class="items-menu">Puesto individual</a>
+                                            </li>
+                                            <li>
+                                                <a href="./mesa-compartida.html" class="items-menu">Mesa compartida</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a class="active" href="reservas.html">Reservas</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="blog.html">Blog</a>
+                        </li>
+                        <div class="row my-4">
+                            <div class="col-12 text-center">
+                                <a class="w-75 btn btn-custom btn-rounded btn-blue-white btn-center-out mb-3" href="./login.html">Iniciar sesión</a>
+
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="w-75 btn btn-custom btn-rounded btn-pink-white btn-sm btn-center-out" href="./register.html">Registrarme</a>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class=" my-4 text-center">
+                        <img class="" src="assets/images/logardo.svg" alt="logo">
+                    </div>
+                    <div class="redes-menu">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/fa.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/ig.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/yt.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img id="trip" src="assets/images/tr.svg" alt="tripadvisor">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--  <div id="redes" class="mb-4 justify-content-center">
+                        <a class="" href="">
+                            <div class="red fb">
+                                <img src="assets/images/fa.svg" alt="facebook">
+                            </div>
+                        </a>
+                        <a class="mx-1" href="">
+                            <div class="red ig">
+                                <img src="assets/images/ig.svg" alt="instagram">
+                            </div>
+                        </a>
+                        <a class="mx-1" href="">
+                            <div class="red yt">
+                                <img src="assets/images/yt.svg" alt="Youtube">
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="red ta">
+                                <img src="assets/images/tr.svg" alt="tripadvisor">
+                            </div>
+                        </a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="section-welcome pb-0 pb-xl-5">
+            <div class="container d-none d-xl-block">
+                <p class="mb-1 title text-center">Reservas</p>
+            </div>
+        </div>
+
+        <div class="section-login section-reservas section-blog mb-5">
+            <div class="container-fluid container-xl p-3 p-md-5 content">
+              
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <ul id="nav-reservas" class="nav justify-content-center">
+                           
+                            <li class="nav-item">
+                              <a class="nav-link active btn-underline-from-center" href="./reservas.html">Encuentra una sala</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link btn-underline-from-center" href="./calendario.html">Calendario de reservas</a>
+                            </li>
+                         
+                          </ul>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-12 col-md-8 offset-md-2 text-center">
+                        <p class="title mb-0 d-block d-xl-none">Salas de reunión y Recursos</p>
+                    </div>
+                </div>
+                <div class="filtros">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="form-group">
+                                <label class="mb-2" for="my-input">Fecha</label>
+                                <input id="my-input" class="form-control" type="date" name="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="form-group">
+                                <label class="mb-2" for="my-input">Hora de inicio</label>
+                                <input id="daterange" class="form-control" type="time" name="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="form-group">
+                                <label class="mb-2" for="my-input">Hora de finalización (60 minutos)</label>
+                                <input id="my-input" class="form-control" type="time" name="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <a class="btn w-100 btn-rounded btn-blue-white btn-center-out" href="">Encontrar salas disponibles</a>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                <div class="reservas my-4">
+                    <div class="section-producto">
+                        <div class="container">
+                            <p class="title-section text-center">Sala de reuniones "NÚCLEO"</p>
+                            <p class="disponibilidad text-center disponible">Disponible</p>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="slider-productos">
+                                       
+                                        <div class="slider-for">
+                                            <div class="slide-big">
+                                                <img class="img-fluid" src="assets/images/c_10.png" alt="cel-grande">
+                                            </div>
+                                            <div class="slide-big">
+                                                <img class="img-fluid" src="assets/images/c_2.png" alt="cel-grande">
+                                            </div>
+                                            <div class="slide-big">
+                                                <img class="img-fluid" src="assets/images/d_3.png" alt="cel-grande">
+                                            </div>
+                                            <div class="slide-big">
+                                                <img class="img-fluid" src="assets/images/c_3.png" alt="cel-grande">
+                                            </div>
+                                        </div>
+                                        <div class="slider-nav">
+                                            <div class="slide-small">
+                                                <img class="img-fluid" src="assets/images/c_10.png" alt="cel-peq">
+                                            </div>
+                                            <div class="slide-small">
+                                                <img class="img-fluid" src="assets/images/c_2.png" alt="cel-peq">
+                                            </div>
+                                            <div class="slide-small">
+                                                <img class="img-fluid" src="assets/images/d_3.png" alt="cel-peq">
+                                            </div>
+                                            <div class="slide-small">
+                                                <img class="img-fluid" src="assets/images/c_3.png" alt="cel-peq">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                                    <div class="compartir-redes">
+                                        <p class="text-blue mb-0">Compartir en: </p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="assets/images/r_1.png" alt="twitter">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="assets/images/r_2.png" alt="youtube">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="assets/images/r_3.png" alt="facebook">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="assets/images/r_4.png" alt="instagram">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="content-text">
+                                        <li class=""><img src="assets/images/caracteristicas/Projector.svg" alt=""> <p>Proyector diapositivas</p> </li>
+                                        <li class=""><img src="assets/images/caracteristicas/Router.svg" alt=""> <p>Router + Wifi</p> </li>
+                                        <li class=""><img src="assets/images/caracteristicas/Board.svg" alt=""> <p>Pizarra Interactiva</p> </li>
+                                        <li class=""><img src="assets/images/caracteristicas/TV.svg" alt=""> <p>Equipo de TV</p> </li>
+                                        <li class=""><img src="assets/images/caracteristicas/Coffee.svg" alt=""> <p>Te y café dispnible</p> </li>
+                                        <li class=""><img src="assets/images/caracteristicas/Soda.svg" alt=""> <p>Bebidas disponibles</p> </li>
+                                        
+                                    </ul>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>Es el centro de atención del Núcleo. La sala ideal que te ayudará a triunfar en tus reuniones, cursos, videoconferencias, e-learning, etc.</p>
+                                            <p>Su estructura rectangular totalmente acristalada en un llamativo rainbow blue te cautivará.</p>
+                                            <p>Una vez dentro, te encontrarás con nuestro gran monitor interactivo digital de 55'' que hará que tus presentaciones sean sencillamente únicas.</p>
+                                            <p>Y por supuesto, todo acompañado de una espectacular mesa de conferencias y modernas sillas de diseño, y como no, con su correspondiente servicio de café, té, infusiones y agua.</p>
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p class="mb-0">Ahora</p>
+                                                <p class="now-price">s/.400</p>
+                                                <p class="mb-0">Antes</p>
+                                                <p class="before-price"><span>s/.400</span></p>
+                                            </div>
+                                            <div class="col-8 col-derecha">
+                                                <div class="text-center">
+                                                    <a class="btn w-100 btn-rounded btn-blue-white btn-center-out" href="">Solicitar reserva</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+
+        <div class="barra gradient w-100 d-none d-lg-block"></div>
+        <div class="section-newsletter">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-xl-10 offset-xl-1">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="title wow fadeInDown">¡Sé el primero en enterarte de los grandes eventos!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-9">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="name" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="mail" placeholder="Email">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check wow fadeInDown">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                          <a href="">Acepto los términos y condiciones.</a>
+                        </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 text-center">
+                                    <div class="d-lg-grid">
+                                        <a id="btn-newsletter" class="btn btn-rounded btn-transparent-white btn-center-out px-3 px-lg-0 wow fadeInDown">¡Quiero ser el primero!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="placaNewsletter" style="display: none;"></div>
+
+        </div>
+        <footer>
+            <div class="section-footer1 d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 wow fadeInLeft slow" style="padding-top: calc(5rem - 26px);">
+                            <img class="mb-1 logo" src="assets/images/logo_b.png" alt="logo">
+                            <p class="mb-1">Tu casa, tu coworking, tu Núcleo</p>
+                            <ul class="datos">
+                                <li>
+                                    <a href="https://goo.gl/maps/KPDbkf4dfv6PZNa48" class="items-menu"> <img src="./assets/images/ubi.svg" alt=""> Avenida Alcalde José Ramirez Bethencourt, 13, 35004 Las Palmas de Gran Canaria, España</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+34928231768" class="items-menu"><img src="./assets/images/tel.svg" alt="">+34928231768</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@elnucleo.es" class="items-menu"><img src="./assets/images/mail.svg" alt="">info@elnucleo.es</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-12 col-md-3 col-content wow fadeInLeft slow">
+                            <h4 class="bold">Legal</h4>
+                            <ul>
+                                <li>
+                                    <a href="./terminos.html" class="items-menu">Términos y condiciones</a>
+                                </li>
+                                <li>
+                                    <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                </li>
+                                <li>
+                                    <a href="./politica-de-privacidad.html" class="items-menu">Política de privacidad</a>
+                                </li>
+                                <li>
+                                    <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h4 class="bold">Nosotros</h4>
+                            <ul>
+                                <li>
+                                    <a href="./miembros.html" class="items-menu">Miembros</a>
+                                </li>
+                                <li>
+                                    <a href="./contacto.html" class="items-menu">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html" class="items-menu">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./faqs.html" class="items-menu">Preguntas frecuentes</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 text-center col-content wow fadeInLeft slow">
+                            <h4 class="bold mb-4">Síguenos en:</h4>
+                            <div id="redes" class="mb-4 justify-content-center">
+                                <a class="" href="">
+                                    <div class="red fb">
+                                        <img src="assets/images/r_1.png" alt="facebook">
+                                    </div>
+                                </a>
+                                <a class="mx-1" href="">
+                                    <div class="red ig">
+                                        <img src="assets/images/r_2.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a class="mx-1" href="">
+                                    <div class="red yt">
+                                        <img src="assets/images/r_3.png" alt="Youtube">
+                                    </div>
+                                </a>
+                                <a class="" href="">
+                                    <div class="red ta">
+                                        <img src="assets/images/r_4.png" alt="tripadvisor">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown dropup d-inline-block">
+                                <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div>
+                                        <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                                        <small>Español</small>
+                                    </div>
+                                    <div>
+                                        <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                                    <li><a class="dropdown-item" href="#">Inglés</a></li>
+                                    <li><a class="dropdown-item" href="#">Español</a></li>
+                                    <li><a class="dropdown-item" href="#">Portugues</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section-mobil-footer d-block d-lg-none">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Legal
+              </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./terminos.html" class="items-menu">Términos y condiciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                    </li>
+                                    <li>
+                                        <a href="./politica-de-privacidad.html" class="items-menu">Política de privacidad</a>
+                                    </li>
+                                    <li>
+                                        <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Nosotros
+              </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./miembros.html" class="items-menu">Miembros</a>
+                                    </li>
+                                    <li>
+                                        <a href="./contacto.html" class="items-menu">Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog.html" class="items-menu">Blog</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./faqs.html">Pregutas frecuentes</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <img class="my-4 logo" src="assets/images/logo_b.png" alt="logo">
+                <p class="mb-1">Tu casa, tu coworking, tu Núcleo</p>
+                <ul class="datos">
+                    <li>
+                        <a href="https://goo.gl/maps/KPDbkf4dfv6PZNa48" class="items-menu"> <img src="./assets/images/ubi.svg" alt=""> Avenida Alcalde José Ramirez Bethencourt, 13, 35004 Las Palmas de Gran Canaria, España</a>
+                    </li>
+                    <li>
+                        <a href="tel:+34928231768" class="items-menu"><img src="./assets/images/tel.svg" alt="">+34928231768</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@elnucleo.es" class="items-menu"><img src="./assets/images/mail.svg" alt="">info@elnucleo.es</a>
+                    </li>
+                </ul>
+                <div id="redes" class="mb-4 justify-content-start">
+                    <a class="" href="">
+                        <div class="red fb">
+                            <img src="assets/images/r_1.png" alt="facebook">
+                        </div>
+                    </a>
+                    <a class="mx-1" href="">
+                        <div class="red ig">
+                            <img src="assets/images/r_2.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a class="mx-1" href="">
+                        <div class="red yt">
+                            <img src="assets/images/r_3.png" alt="Youtube">
+                        </div>
+                    </a>
+                    <a class="" href="">
+                        <div class="red ta">
+                            <img src="assets/images/r_4.png" alt="tripadvisor">
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown dropup d-inline-block">
+                    <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                            <small>Español</small>
+                        </div>
+                        <div>
+                            <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                        <li><a class="dropdown-item" href="#">Inglés</a></li>
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">Portugues</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-footer2 gradient">
+                <div class="text-center">
+                    <small>
+            <p class="mb-0 wow fadeIn">
+              &copy; 2022 El Núcleo - Todos los derechos reservados 
+            </p>
+          </small>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/wowjs/wow.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+    <script src="assets/js/main.js"></script>
+    <script src="assets/libs/slick-slider/slick/slick.min.js "></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
+    </script>
+    <script src="assets/js/materialize.min.js"></script>
+<script>
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.slider-nav',
+            prevArrow: '<img class="slick-prev" src="assets/images/chevron-left1.svg">',
+            nextArrow:'<img class="slick-next" src="assets/images/chevron-right1.svg">'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            prevArrow: '<img class="slick-prev1" src="assets/images/chevron-left1.svg">',
+            nextArrow:'<img class="slick-next1" src="assets/images/chevron-right1.svg">',
+            rows: 0
+        });
+    </script>
+  
+
+    <script>
+        window.addEventListener('load', () => {
+           
+            
+        });
+    </script>
+   
+</body>
+
+</html>
