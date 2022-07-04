@@ -1,0 +1,41 @@
+.foto-texto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.foto-texto#logo-1 .amarillo {
+    background-color: #ffb101
+}
+
+.foto-texto#logo-2 .amarillo {
+    background-color: #ffc301
+}
+
+.foto-texto#logo-3 .amarillo {
+    background-color: #ffdb01
+}
+
+.foto-texto .amarillo {
+    width: 100%;
+    position: absolute;
+    height: 55%;
+    z-index: -1
+}
+
+.foto-texto img {
+    max-width: 20%
+}
+
+.foto-texto .title {
+    margin-left: 1rem;
+    font-size: 16px;
+    font-family: Roboto !important;
+    margin-bottom: 0px;
+    color: #3a3a3a
+}
+
+
+/*# sourceMappingURL=stepbar.min.css.map */

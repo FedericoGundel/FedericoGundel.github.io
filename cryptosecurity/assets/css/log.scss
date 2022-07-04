@@ -1,0 +1,209 @@
+.section-login{
+    padding: 200px 0px;
+    background-image: url(../images/erer.png);
+    position: relative;
+    height: fit-content;
+    background-size: cover;
+    @media(max-width:768px){
+        padding: 120px 0px;  
+    }
+    .title{
+        color: #061826;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .text{
+            color: #061826;
+            font-size: 1rem;
+    }
+    .container{
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid grey;
+        max-width: 700px;
+       
+
+    }
+    .input-pass {
+        .password {
+        display: inline;
+        background-image: url(../images/pass.png);
+        background-repeat: no-repeat;
+        background-position: 10px;
+        background-size: auto 70%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+}
+input, input.form-control{
+    height: 55px;
+    font-size: 1rem;
+    @media(max-width:768px){
+        font-size: 1.3rem; 
+    }
+}
+
+}
+.section-login .form-login .username {
+    background-image: url(../images/us.svg);
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: auto 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-login .form-login .nombre {
+    background-image: url(../images/us.svg);
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: auto 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-login .form-login .apellido {
+    background-image: url(../images/us.svg);
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: auto 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-login .form-login .mail {
+    background-image: url(../images/gmail.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 80%;
+    text-align: center;
+}
+
+.section-login .form-login .username:focus {
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 0 2px rgba(54, 69, 64, 0.3);
+}
+
+.section-login .form-login .input-pass {
+    position: relative;
+}
+
+.section-login .form-login .input-pass .password {
+    display: inline;
+    background-image: url(../images/pass.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 70%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-login .form-login .input-pass .password:focus {
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 0 2px rgba(54, 69, 64, 0.3);
+}
+
+.section-login .form-login .input-pass .eyes-hide,
+.section-login .form-login .input-pass .eyes-show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition: all .3s;
+    background: transparent;
+    border: none;
+}
+
+.section-login .form-login .input-pass .eyes-hide img,
+.section-login .form-login .input-pass .eyes-show img {
+    height: 80%;
+}
+
+.section-login .form-login .input-pass .eyes-hide {
+    display: none;
+    transition: all .3s;
+}
+
+.section-login .form-login .input-pass .eyes-show {
+    display: block;
+    transition: all .3s;
+}
+
+.section-login .form-login .btn-redgr-white,
+.section-login .form-login .btn-white-redgr {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: .8rem .75rem;
+    @media(max-width:768px){
+        font-size: 1.3rem!important; 
+    }
+    
+}
+
+.section-login .form-login .enlace {
+    color: #6e60e7;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.section-login .form-login .enlace:hover {
+    color: #6e60e7;
+}
+
+.section-login .form-login .btn-white-redgr {
+    color: #5c5c5c;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+}
+
+.section-login .form-login .btn-white-redgr:hover {
+    background-color: #eaeaea;
+}
+
+.section-login .form-login .gmail {
+    background-image: url(../images/gmail.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 80%;
+}
+
+.section-login .form-login .facebook {
+    background-image: url(../images/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 80%;
+    margin-top: 1rem;
+}
+
+.section-login .form-login .enlace-redes {
+    color: #5c5c5c;
+    text-decoration: none;
+    transition: all .3s;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-login .form-login .enlace-redes {
+        font-size: 1rem;
+    }
+}
+
+.section-login .form-login .enlace-redes:hover {
+    color: #6e60e7;
+}
+
+#login-button svg path,
+#login-button svg rect {
+    fill: white;
+}
+
+#login-button:hover svg path,
+#login-button:active svg path,
+#login-button:hover svg rect,
+#login-button:active svg rect,
+#login-button:focus svg path,
+#login-button:focus svg rect {
+    fill: #6e60e7;
+}
