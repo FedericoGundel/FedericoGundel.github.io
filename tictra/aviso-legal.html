@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tictra</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/faqs.min.css">
+
+</head>
+
+<body class="nav-transp">
+    <div id="navbar">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="./">
+                    <img class="logo-navbar" src="assets/images/logo.png" alt="Tictra">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link @@index btn-underline-from-center" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-underline-from-center" href="eventos.html">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @@nosotros btn-underline-from-center" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item ps-3 pe-0">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">
+                <img src="assets/images/icons/search.png" alt="search">
+              </span>
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                        </div>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="btn btn-custom btn-rounded btn-green-white btn-center-out" href="">QUIERO UNIRME</a>
+                    </li>
+                    <li class="nav-item icon-perfil ps-3 pe-0">
+                        <a class="btn-user" href="#">
+                            <img src="assets/images/icons/user.png" alt="user" />
+                        </a>
+                        <div class="popup-login" style="display: none;">
+                            <div class="d-grid p-3">
+                                <a class="btn btn-custom btn-rounded btn-green-white btn-center-out px-0 mb-3" href="login.html">Iniciar Sesión</a>
+                                <a class="btn btn-custom btn-rounded btn-green-white btn-center-out px-0" href="register.html">Registrarse</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item icon-shopping-cart ps-3 pe-0">
+                        <a class="btn-shopping-cart toggle-cart position-relative" href="#">
+                            <img src="assets/images/icons/shopping-cart.png" alt="shopping cart" />
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="navbar-mobile" class="navbar-mobil">
+        <div class="container">
+            <div class="menu">
+                <div class="text-start">
+                    <button id="open" class="btn-menu">
+            <img src="assets/images/icons/menu.png" alt="menu">
+          </button>
+                </div>
+                <div class="text-center">
+                    <img class="img-logo" src="assets/images/logo.png" alt="logo">
+                </div>
+                <div class="text-end icon-perfil">
+                    <a class="btn-shopping-cart toggle-cart position-relative" href="#">
+                        <img src="assets/images/icons/shopping-cart.png" alt="shopping cart" />
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-open">
+                <div id="close" class="icon-close">
+                    <img src="assets/images/icons/x.png" alt="close">
+                </div>
+                <div class="contenedor-menu">
+                    <p class="title-menu">Menu</p>
+                    <ul class="list-menu">
+                        <li>
+                            <a href="index.html">
+                INICIO
+              </a>
+                        </li>
+                        <li>
+                            <a href="eventos.html">
+                EVENTOS
+              </a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">
+                NOSOTROS
+              </a>
+                        </li>
+                        <li class="text-center">
+                            <a class="btn btn-custom btn-rounded btn-green-white btn-center-out mb-3" href="">QUIERO UNIRME</a>
+                            <a class="btn btn-custom btn-rounded btn-green-white btn-center-out mb-3" href="">INICIAR SESIÓN</a>
+                            <a class="btn btn-custom btn-rounded btn-green-white btn-center-out" href="">REGISTRARME</a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <img class="w-50" src="assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="redes-menu">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/fb-green.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/ig-green.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/yt-green.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/ta-green.png" alt="tripadvisor">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div id="sidebar-cart" class="seccion-desplegable px-4">
+
+            <a class="toggle-cart float-end " type="button"><img src="assets/images/close.svg" width="20px" alt=""></a>
+            <h2 class="text-center my-3" style="font-size:2rem">BOLSA DE COMPRA</h2>
+
+            <div class="content-productos">
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+            </div>
+            <div class="totales">
+                <hr class="upTotales mt-3">
+                <div class="row">
+                    <div class="col-5 col-md-4 col-lg-6 col-xl-4">
+                        <p>Subtotal:</p>
+                        <p>Descuentos:</p>
+                    </div>
+                    <div class="col-7 col-md-8 col-lg-6 col-xl-8">
+                        <p class="subtotal">10,00<span>€</span></p>
+                        <p class="descuentos">10,00<span>€</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Total: <span class="total text-green">10,00</span><span class="text-green">€</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <a type="button" class="w-100 btn btn-custom btn-green-white btn-center-out">Aplicar</a>
+
+                    </div>
+                    <div class="col-12">
+                        <a class="w-100 btn btn-custom btn-blue-white btn-center-out">Quitar todo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-faqs">
+            <div class="container content-container p-0">
+
+                <div class="container2 p-4 p-sm-5">
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-8 offset-md-2 text-center">
+                            <h2>Aviso Legal</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="sub">1. Datos identificativos</p>
+                            <p class="text"> En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, a continuación se reflejan los siguientes datos:
+                                <br> la empresa titular de <a class="enlace" href="https://www.tictra.com/">www.TICTRA.com</a> es Superfestivales S.L. (en adelante Superfestivales S.L.), con domicilio a estos efectos en <a class="enlace" href="https://goo.gl/maps/QtyS9b1wYNwEgKRR7">Calle La Palmera N13 Tercero D (Telde, Las Palmas)</a>,
+                                número de C.I.F.: 78528935N SUPERFESTIVALES inscrita en el Registro Mercantil de (CAMBIAR DATOS Y PONER LOS DE SUPERFESTIVALES) Santa Cruz de Tenerife en la Hoja TF-12728, Folio 118 del Tomo 1325 de la Sección General.
+                                Correo electrónico de contacto: <a class="enlace" href="mailto:info@tictra.com">info@tictra.com</a>. Teléfono de contacto: <a class="enlace" href="tel:+34 669862535">+34 669862535</a></p>
+                            <p class="sub">2. Usuarios</p>
+                            <p class="text"> El acceso y/o uso de este portal de Superfestivales S.L. atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación
+                                independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.</p>
+                            <p class="sub">3. Uso del portal</p>
+                            <p class="text"> <a class="enlace" href="https://www.tictra.es/">www.TICTRA.es</a> proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a SUPERFESTIVALES
+                                S.L. o a sus licenciantes a los que el USUARIO pueda tener acceso. El USUARIO asume la responsabilidad del uso del portal. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios
+                                o contenidos. En dicho registro el USUARIO será responsable de aportar información veraz y lícita. Como consecuencia de este registro, al USUARIO se le puede proporcionar una contraseña de la que será responsable, comprometiéndose
+                                a hacer un uso diligente y confidencial de la misma. El USUARIO se compromete a hacer un uso adecuado de los contenidos y servicios (como por ejemplo servicios de chat, foros de discusión o grupos de noticias) que SUPERFESTIVALES
+                                S.L. ofrece a través de su portal y con carácter enunciativo pero no limitativo, a no emplearlos para: <br>
+                                <ul>
+                                    <li>Incurrir en actividades ilícitas, ilegales o contrarias a la buena fe y al orden público. </li>
+                                    <li>Difundir contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología del terrorismo o atentatorio contra los derechos humanos. </li>
+                                    <li>Provocar daños en los sistemas físicos y lógicos de Superfestivales S.L., de sus proveedores o de terceras personas, introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos
+                                        que sean susceptibles de provocar los daños anteriormente mencionados. </li>
+                                    <li>Intentar acceder y, en su caso, utilizar las cuentas de correo electrónico de otros usuarios y modificar o manipular sus mensajes. </li>
+                                </ul>
+
+
+
+
+                                Superfestivales S.L. se reserva el derecho de retirar todos aquellos comentarios y aportaciones que vulneren el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, que atenten contra la juventud o la infancia,
+                                el orden o la seguridad pública o que, a su juicio, no resultaran adecuados para su publicación. En cualquier caso, Superfestivales S.L. no será responsable de las opiniones vertidas por los usuarios a través de los foros,
+                                chats, u otras herramientas de participación.</p>
+                            <p class="sub">4. Protección de datos</p>
+                            <p class="text"> Superfestivales S.L. cumple con la legislación vigente de privacidad y protección de datos. Para mas información consulte <a href="./política-de-privacidad.html" class="enlace">Privacidad y Política de protección de datos</a>.</p>
+                            <p class="sub">5. Propiedad intelectual e industrial</p>
+                            <p class="text"> Superfestivales S.L. por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo, imágenes, sonido,
+                                audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.), titularidad
+                                de Superfestivales S.L. o bien de sus licenciantes. Todos los derechos reservados. En virtud de lo dispuesto en los artículos 8 y 32.1, párrafo segundo, de la Ley de Propiedad Intelectual, quedan expresamente prohibidas
+                                la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por
+                                cualquier medio técnico, sin la autorización de Superfestivales S.L.. El USUARIO se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de Superfestivales S.L.. Podrá visualizar los elementos
+                                del portal e incluso imprimirlos, copiarlos y almacenarlos en el disco duro de su ordenador o en cualquier otro soporte físico siempre y cuando sea, única y exclusivamente, para su uso personal y privado. El USUARIO deberá
+                                abstenerse de suprimir, alterar, eludir o manipular cualquier dispositivo de protección o sistema de seguridad que estuviera instalado en el las páginas de Superfestivales S.L.</p>
+                            <p class="sub">6. Exclusión de garantías y responsabilidad</p>
+                            <p class="text"> Superfestivales S.L., a través de su página <a class="enlace" href="https://www.tictra.es/">www.TICTRA.es</a>, únicamente actúa como intermediario entre los Organizadores y los usuarios en la compraventa de entradas de los
+                                Eventos, gestionando en nombre y por cuenta de los Organizadores la distribución de entradas, por lo que:
+                                <ul>
+                                    <li>No asumirá responsabilidad alguna en el caso de que el evento finalmente no llegue a celebrarse, debiendo dirigirse la reclamación oportuna al Organizador de dicho Evento quien, mediante la aceptación de los Términos
+                                        y Condiciones, exime a Superfestivales S.L. de cualquier tipo de responsabilidad que pudiera derivarse como consecuencia de dicha cancelación; </li>
+                                    <li>
+                                        Del mismo modo los cambios de programación, contenido del evento, distribución de los asientos y localidades del mismo, así como el modo en que se desarrolle el evento o la calidad del mismo, es responsabilidad del Organizador, a quien deberá dirigir
+                                        cualquier reclamación relacionada con estos aspectos;
+                                    </li>
+                                    <li>En el supuesto de que la compra de entradas se realice a través de la pasarela de pago del Organizador (de lo que se informará debidamente en el Sitio Web antes de realizar la compra), Superfestivales S.L. no asumirá
+                                        responsabilidad alguna derivada de cualquier reclamación que reciba por parte de los compradores en relación con la devolución del importe de la entrada; </li>
+                                    <li> El Sitio Web o la App pueden sufrir caídas o fallos técnicos o colapsos por lo que Superfestivales S.L. garantiza que realizará sus mejores esfuerzos para solventar dichas incidencias en el menor tiempo posible, si
+                                        bien declina cualquier responsabilidad al respecto.</p>
+                            </li>
+                            </ul>
+
+
+
+
+                            <p class="sub">7. Modificaciones</p>
+                            <p class="text"> Superfestivales S.L. se reserva el derecho de efectuar las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la
+                                forma en la que éstos aparezcan presentados o localizados en su portal.</p>
+                            <p class="sub">8. Enlaces</p>
+                            <p class="text"> En el caso de que en <a class="enlace" href="https://www.tictra.es/">www.TICTRA.es</a> se dispusiesen enlaces o hipervínculos hacía otros sitios de Internet, Superfestivales S.L. no ejercerá ningún tipo de control sobre dichos
+                                sitios y contenidos. En ningún caso Superfestivales S.L. asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno, ni garantizará la disponibilidad técnica, calidad, fiabilidad,
+                                exactitud, amplitud, veracidad, validez y constitucionalidad de cualquier material o información contenida en ninguno de dichos hipervínculos u otros sitios de Internet. Igualmente la inclusión de estas conexiones externas
+                                no implicará ningún tipo de asociación, fusión o participación con las entidades conectadas.</p>
+                            <p class="sub">9. Derecho de exclusión</p>
+                            <p class="text"> Superfestivales S.L. se reserva el derecho a denegar o retirar el acceso a portal y/o los servicios ofrecidos sin necesidad de preaviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan las presentes Condiciones
+                                Generales de Uso.</p>
+                            <p class="sub">10. Generalidades</p>
+                            <p class="text"> Superfestivales S.L. perseguirá el incumplimiento de las presentes condiciones así como cualquier utilización indebida de su portal ejerciendo todas las acciones civiles y penales que le puedan corresponder en derecho.</p>
+                            <p class="sub">11. Modificación de las presentes condiciones y duración</p>
+                            <p class="text"> Superfestivales S.L. podrá modificar en cualquier momento las condiciones aquí determinadas, siendo debidamente publicadas como aquí aparecen. La vigencia de las citadas condiciones irá en función de su exposición y estarán
+                                vigentes hasta que sean modificadas por otras debidamente publicadas.</p>
+                            <p class="sub">12. Legislación aplicable y jurisdicción</p>
+                            <p class="text"> Estas condiciones se rigen por la ley española. Las partes (Superfestivales S.L. y el Usuario) acuerdan someterse, a su elección, para la resolución de los conflictos y con renuncia a cualquier otro fuero, a los juzgados y tribunales
+                                del domicilio del usuario. REVISAR DESDE AQUÍ Nuestra entidad se encuentra adherida a Confianza Online (Asociación sin ánimo de lucro), inscrita en el Registro Nacional de Asociaciones Grupo 1, Sección 1, número nacional
+                                594400, CIF 78528935N, Carrera de San Jerónimo, 18, 4º 1, 28014 Madrid (España). Para más información: www.confianzaonline.es Estas Condiciones Generales se rigen por la ley española. Así mismo, en cumplimiento de lo dispuesto
+                                en la Ley de Resolución Alternativa de Litigios, informamos a los consumidores que, como entidad adherida y en los términos del Código Ético, los usuarios podrán acudir a Confianza Online para la resolución alternativa
+                                de eventuales controversias (https://www.confianzaonline.es/como-reclamar/formulario-de-reclamaciones/). Si éstas se refieren a transacciones electrónicas con consumidores, o sobre protección de datos cuando estén relacionadas
+                                con este ámbito, las reclamaciones serán resueltas por el Comité de Mediación de Confianza Online, acreditado para la resolución alternativa de litigios en materia de consumo. Si las reclamaciones versan sobre publicidad
+                                digital, o sobre protección de datos relacionada con este ámbito, serán sometidas al Jurado de la Publicidad de AUTOCONTROL. Además te recordamos que puedes acceder a la plataforma de resolución de litigios en línea de
+                                la Unión Europea siguiendo este enlace: https://ec.europa.eu/consumers/odr/main/?event=main.home2.show Del mismo modo, por estar establecido Superfestivales S.L. un país miembro de la UE, le informamos que puede presentar
+                                sus reclamaciones en la plataforma de resolución de litigios en línea a través del siguiente enlace. HASTA AQUÍ</p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section-newsletter">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-xl-10 offset-xl-1">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="title wow fadeInDown">¡Sé el primero en enterarte de los grandes eventos!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-9">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="name" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="mail" placeholder="Email">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check wow fadeInDown">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                          <a href="">Acepto los términos y condiciones.</a>
+                        </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 text-center">
+                                    <div class="d-lg-grid">
+                                        <a id="btn-newsletter" class="btn btn-rounded btn-transparent-white btn-center-out px-3 px-lg-0 wow fadeInDown">¡Quiero ser el primero!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="placaNewsletter" style="display: none;"></div>
+
+        </div>
+        <footer>
+            <div class="section-footer1 d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 wow fadeInLeft slow">
+                            <img class="logo" src="assets/images/logo-gray.png" alt="logo">
+                            <p>Encuentra y compra entradas para los mejores conciertos, eventos deportivos, obras de teatro, festivales y mucho más.</p>
+                            <ul>
+                                <li>
+                                    <a class="items-menu" href="https://goo.gl/maps/QtyS9b1wYNwEgKRR7">Calle La Palmera N13 Tercero D (Telde, Las Palmas)</a>
+                                </li>
+                                <li>
+                                    <a class="items-menu" href="tel:+34 669862535">+34 669862535</a>
+                                </li>
+                                <li>
+                                    <a class="items-menu" href="mailto:info@tictra.com">info@tictra.com</a>
+                                </li>
+                            </ul>
+                            <div id="redes">
+                                <a class="" href="">
+                                    <div class="red fb">
+                                        <img src="assets/images/icons/fb-gray.png" alt="facebook">
+                                    </div>
+                                </a>
+                                <a class="me-2" href="">
+                                    <div class="red ig">
+                                        <img src="assets/images/icons/ig-gray.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a class="me-2" href="">
+                                    <div class="red yt">
+                                        <img src="assets/images/icons/yt-gray.png" alt="Youtube">
+                                    </div>
+                                </a>
+                                <a class="" href="">
+                                    <div class="red ta">
+                                        <img src="assets/images/icons/ta-gray.png" alt="tripadvisor">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h5>Conócenos</h5>
+                            <ul>
+                                <li>
+                                    <a href="./nosotros.html" class="items-menu">Sobre Nosotros</a>
+                                </li>
+                                <li>
+                                    <a href="./puntos-de-venta.html" class="items-menu">Puntos de Venta</a>
+                                </li>
+                                <li>
+                                    <a href="./celebraciones.html" class="items-menu">Celebraciones</a>
+                                </li>
+                                <li>
+                                    <a href="./cambios-de-eventos.html" class="items-menu">Cambios de Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="./empresas.html" class="items-menu">Empresas Colaboradoras</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h5>¿Eres organizador?</h5>
+                            <ul>
+                                <li>
+                                    <a href="" class="items-menu">Te ayudamos a vender entradas</a>
+                                </li>
+                                <li>
+                                    <a href="" class="items-menu">Te ayudamos a organizar tu evento</a>
+                                </li>
+                                <li>
+                                    <a href="./contacto.html" class="items-menu">Contacta con nosotros</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h5>¿Dudas?</h5>
+                            <ul>
+                                <li>
+                                    <a href="./compras.html" class="items-menu">Mis Reservas/Compras</a>
+                                </li>
+                                <li>
+                                    <a href="./faqs.html" class="items-menu">Dudas Frecuentes</a>
+                                </li>
+                                <li>
+                                    <a href="./mapa-del-sitio.html" class="items-menu">Mapa del sitio</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+
+                            <h5>Información legal</h5>
+                            <ul>
+                                <li>
+                                    <a href="./condiciones-de-uso.html" class="items-menu">Condiciones de uso</a>
+                                </li>
+                                <li>
+                                    <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                </li>
+                                <li>
+                                    <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                </li>
+                                <li>
+                                    <a href="./privacidad-y-proteccion.html" class="items-menu">Privacidad y protección de datos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="dropdown dropup d-inline-block">
+                                <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div>
+                                        <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                                        <small>Español</small>
+                                    </div>
+                                    <div>
+                                        <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                                    <li><a class="dropdown-item" href="#">Inglés</a></li>
+                                    <li><a class="dropdown-item" href="#">Español</a></li>
+                                    <li><a class="dropdown-item" href="#">Portugues</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-mobil-footer d-block d-lg-none">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Conócenos
+              </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./nosotros.html" class="items-menu">Sobre Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="./puntos-de-venta.html" class="items-menu">Puntos de Venta</a>
+                                    </li>
+                                    <li>
+                                        <a href="./celebraciones.html" class="items-menu">Celebraciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="./cambios-de-eventos.html" class="items-menu">Cambios de Eventos</a>
+                                    </li>
+                                    <li>
+                                        <a href="./empresas.html" class="items-menu">Empresas Colaboradoras</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Eres organizador?
+              </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="">Te ayudamos a vender entradas</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Te ayudamos a organizar tu evento</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">Contacta con nosotros</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Dudas?
+              </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./compras.html" class="items-menu">Mis Reservas/Compras</a>
+                                    </li>
+                                    <li>
+                                        <a href="./faqs.html" class="items-menu">Dudas Frecuentes</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mapa-del-sitio.html" class="items-menu">Mapa del sitio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">Información legal</button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./condiciones-de-uso.html" class="items-menu">Condiciones de uso</a>
+                                    </li>
+                                    <li>
+                                        <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                    </li>
+                                    <li>
+                                        <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="./privacidad-y-proteccion.html" class="items-menu">Privacidad y protección de datos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="logo" src="assets/images/logo-gray.png" alt="logo">
+                <p>Encuentra y compra entradas para los mejores conciertos, eventos deportivos, obras de teatro, festivales y mucho más.</p>
+                <ul>
+                    <li>
+                        <a class="items-menu" href="https://goo.gl/maps/QtyS9b1wYNwEgKRR7">Calle La Palmera N13 Tercero D (Telde, Las Palmas)</a>
+                    </li>
+                    <li>
+                        <a class="items-menu" href="tel:+34 669862535">+34 669862535</a>
+                    </li>
+                    <li>
+                        <a class="items-menu" href="mailto:info@tictra.com">info@tictra.com</a>
+                    </li>
+                </ul>
+                <div id="redes">
+                    <a class="" href="">
+                        <div class="red fb">
+                            <img src="assets/images/icons/fb-gray.png" alt="facebook">
+                        </div>
+                    </a>
+                    <a class="me-2" href="">
+                        <div class="red ig">
+                            <img src="assets/images/icons/ig-gray.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a class="me-2" href="">
+                        <div class="red yt">
+                            <img src="assets/images/icons/yt-gray.png" alt="Youtube">
+                        </div>
+                    </a>
+                    <a class="" href="">
+                        <div class="red ta">
+                            <img src="assets/images/icons/ta-gray.png" alt="tripadvisor">
+                        </div>
+                    </a>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="dropdown dropup d-inline-block">
+                            <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div>
+                                    <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                                    <small>Español</small>
+                                </div>
+                                <div>
+                                    <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                                <li><a class="dropdown-item" href="#">Inglés</a></li>
+                                <li><a class="dropdown-item" href="#">Español</a></li>
+                                <li><a class="dropdown-item" href="#">Portugues</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer2">
+                <div class="text-center">
+                    <small>
+            <p class="mb-0 wow fadeIn">
+              &copy; 2022 Tictra - Todos los derechos reservados 
+            </p>
+          </small>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/wowjs/wow.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
+    </script>
+   
+</body>
+
+</html>

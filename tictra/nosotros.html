@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tictra</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/nosotros.min.css">
+
+</head>
+
+<body class="nav-transp">
+    <div id="navbar">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="./">
+                    <img class="logo-navbar" src="assets/images/logo.png" alt="Tictra">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link @@index btn-underline-from-center" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-underline-from-center" href="eventos.html">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @@nosotros btn-underline-from-center" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item ps-3 pe-0">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">
+                <img src="assets/images/icons/search.png" alt="search">
+              </span>
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                        </div>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="btn btn-custom btn-rounded btn-green-white btn-center-out" href="">QUIERO UNIRME</a>
+                    </li>
+                    <li class="nav-item icon-perfil ps-3 pe-0">
+                        <a class="btn-user" href="#">
+                            <img src="assets/images/icons/user.png" alt="user" />
+                        </a>
+                        <div class="popup-login" style="display: none;">
+                            <div class="d-grid p-3">
+                                <a class="btn btn-custom btn-rounded btn-green-white btn-center-out px-0 mb-3" href="login.html">Iniciar Sesión</a>
+                                <a class="btn btn-custom btn-rounded btn-green-white btn-center-out px-0" href="register.html">Registrarse</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item icon-shopping-cart ps-3 pe-0">
+                        <a class="btn-shopping-cart toggle-cart position-relative" href="#">
+                            <img src="assets/images/icons/shopping-cart.png" alt="shopping cart" />
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="navbar-mobile" class="navbar-mobil">
+        <div class="container">
+            <div class="menu">
+                <div class="text-start">
+                    <button id="open" class="btn-menu">
+            <img src="assets/images/icons/menu.png" alt="menu">
+          </button>
+                </div>
+                <div class="text-center">
+                    <img class="img-logo" src="assets/images/logo.png" alt="logo">
+                </div>
+                <div class="text-end icon-perfil">
+                    <a class="btn-shopping-cart toggle-cart position-relative" href="#">
+                        <img src="assets/images/icons/shopping-cart.png" alt="shopping cart" />
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-open">
+                <div id="close" class="icon-close">
+                    <img src="assets/images/icons/x.png" alt="close">
+                </div>
+                <div class="contenedor-menu">
+                    <p class="title-menu">Menu</p>
+                    <ul class="list-menu">
+                        <li>
+                            <a href="index.html">
+                INICIO
+              </a>
+                        </li>
+                        <li>
+                            <a href="eventos.html">
+                EVENTOS
+              </a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">
+                NOSOTROS
+              </a>
+                        </li>
+                        <li class="text-center">
+                            <a class="btn btn-custom btn-rounded btn-green-white btn-center-out mb-3" href="">QUIERO UNIRME</a>
+                            <a class="btn btn-custom btn-rounded btn-green-white btn-center-out mb-3" href="">INICIAR SESIÓN</a>
+                            <a class="btn btn-custom btn-rounded btn-green-white btn-center-out" href="">REGISTRARME</a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <img class="w-50" src="assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="redes-menu">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/fb-green.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/ig-green.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/yt-green.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/icons/ta-green.png" alt="tripadvisor">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div id="sidebar-cart" class="seccion-desplegable px-4">
+
+            <a class="toggle-cart float-end " type="button"><img src="assets/images/close.svg" width="20px" alt=""></a>
+            <h2 class="text-center my-3" style="font-size:2rem">BOLSA DE COMPRA</h2>
+
+            <div class="content-productos">
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+                <div class="producto">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 d-flex align-items-center">
+                            <div class="content-img-product">
+                                <img src="assets/images/home/img_2.png" alt="Producto">
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <div>
+                                <p class="mb-0">Lorem ipsum dolor sit.</p>
+                                <p class="precio text-violet mb-0">10,00€</p>
+                                <div class="content-cantidad">
+                                    <button class="menos">
+    <i class="fa fa-minus"></i>
+  </button>
+                                    <input type="number" id="" name="" class="cantidad" min="1" max="99" step="1" value="1">
+                                    <button class="mas">
+    <i class="fa fa-plus"></i>
+  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn delete">
+<i class="fas fa-trash-alt fa-lg"></i>
+</button>
+                </div>
+            </div>
+            <div class="totales">
+                <hr class="upTotales mt-3">
+                <div class="row">
+                    <div class="col-5 col-md-4 col-lg-6 col-xl-4">
+                        <p>Subtotal:</p>
+                        <p>Descuentos:</p>
+                    </div>
+                    <div class="col-7 col-md-8 col-lg-6 col-xl-8">
+                        <p class="subtotal">10,00<span>€</span></p>
+                        <p class="descuentos">10,00<span>€</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Total: <span class="total text-green">10,00</span><span class="text-green">€</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <a type="button" class="w-100 btn btn-custom btn-green-white btn-center-out">Aplicar</a>
+
+                    </div>
+                    <div class="col-12">
+                        <a class="w-100 btn btn-custom btn-blue-white btn-center-out">Quitar todo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <div class="section-nosotros">
+            <div class="container content-container p-0">
+
+                <div class="container2 p-4 p-sm-5">
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-8 offset-md-2 text-center">
+                            <h2>Sobre nosotros</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 m-auto mb-5">
+                            <p class="text-center">
+                                Somos una de las empresas líderes en el sector del ocio, organización, comercio y venta de eventos de las Islas Canarias. Trabajamos con una gran variedad de locales y promotores promocionando y gestionando la venta de sus productos y experiencias. Gracias a este formato de venta online conseguimos otorgar a nuestros clientes una mayor accesibilidad, facilidad y rapidez en sus compras.
+                            </p>
+                        </div>
+                        <div class="col-md-12 m-auto mb-5">
+                            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.561642977825!2d-15.379901284614617!3d28.007304882668617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40bd3e08ffc8df%3A0xfce00d4d32ed16a6!2sC.%20Palmera%2C%2013%2C%2035212%20La%20Garita%2C%20Las%20Palmas%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1649209515494!5m2!1ses!2sar" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-8 offset-md-2 text-center">
+                            <h2>Nuestro equipo</h2>
+                        </div>
+                    </div>
+                    <div class="row bg-grey py-5">
+                        <div class="col-10 m-auto">
+                            <div class="row">
+                                <div class="col-7 col-sm-6 member-img">
+                                   <img src="assets/images/card-member.png" alt="">
+                           
+                                </div>
+                                <div class="col-5 col-sm-6 d-flex align-items-center justify-content-center justify-content-start">
+                                    <div class="content-data  text-center text-sm-start">
+                                        <p class="mb-2 nombre">Nombre Apellido</p>
+                                        <p class="mb-2 cargo">PUESTO</p>
+                                        <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-linkedin icon-ln"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-10 m-auto">
+                            <div class="row">
+                              
+                                <div class="col-5 col-sm-6 d-flex align-items-center justify-content-center justify-content-sm-start ">
+                                    <div class="content-data text-center text-sm-start">
+                                        <p class="mb-2 nombre">Nombre Apellido</p>
+                                        <p class="mb-2 cargo">PUESTO</p>
+                                        <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-linkedin icon-ln"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-7 col-sm-6 member-img">
+                                    <img src="assets/images/card-member.png" alt="">
+                            
+                                 </div>
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section-newsletter">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-xl-10 offset-xl-1">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="title wow fadeInDown">¡Sé el primero en enterarte de los grandes eventos!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-9">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="name" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control mb-3 wow fadeInDown" id="mail" placeholder="Email">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check wow fadeInDown">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                          <a href="">Acepto los términos y condiciones.</a>
+                        </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 text-center">
+                                    <div class="d-lg-grid">
+                                        <a id="btn-newsletter" class="btn btn-rounded btn-transparent-white btn-center-out px-3 px-lg-0 wow fadeInDown">¡Quiero ser el primero!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="placaNewsletter" style="display: none;"></div>
+
+        </div>
+        <footer>
+            <div class="section-footer1 d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 wow fadeInLeft slow">
+                            <img class="logo" src="assets/images/logo-gray.png" alt="logo">
+                            <p>Encuentra y compra entradas para los mejores conciertos, eventos deportivos, obras de teatro, festivales y mucho más.</p>
+                            <ul>
+                                <li>
+                                    <a class="items-menu" href="https://goo.gl/maps/QtyS9b1wYNwEgKRR7">Calle La Palmera N13 Tercero D (Telde, Las Palmas)</a>
+                                </li>
+                                <li>
+                                    <a class="items-menu" href="tel:+34 669862535">+34 669862535</a>
+                                </li>
+                                <li>
+                                    <a class="items-menu" href="mailto:info@tictra.com">info@tictra.com</a>
+                                </li>
+                            </ul>
+                            <div id="redes">
+                                <a class="" href="">
+                                    <div class="red fb">
+                                        <img src="assets/images/icons/fb-gray.png" alt="facebook">
+                                    </div>
+                                </a>
+                                <a class="me-2" href="">
+                                    <div class="red ig">
+                                        <img src="assets/images/icons/ig-gray.png" alt="instagram">
+                                    </div>
+                                </a>
+                                <a class="me-2" href="">
+                                    <div class="red yt">
+                                        <img src="assets/images/icons/yt-gray.png" alt="Youtube">
+                                    </div>
+                                </a>
+                                <a class="" href="">
+                                    <div class="red ta">
+                                        <img src="assets/images/icons/ta-gray.png" alt="tripadvisor">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h5>Conócenos</h5>
+                            <ul>
+                                <li>
+                                    <a href="./nosotros.html" class="items-menu">Sobre Nosotros</a>
+                                </li>
+                                <li>
+                                    <a href="./puntos-de-venta.html" class="items-menu">Puntos de Venta</a>
+                                </li>
+                                <li>
+                                    <a href="./celebraciones.html" class="items-menu">Celebraciones</a>
+                                </li>
+                                <li>
+                                    <a href="./cambios-de-eventos.html" class="items-menu">Cambios de Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="./empresas.html" class="items-menu">Empresas Colaboradoras</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h5>¿Eres organizador?</h5>
+                            <ul>
+                                <li>
+                                    <a href="" class="items-menu">Te ayudamos a vender entradas</a>
+                                </li>
+                                <li>
+                                    <a href="" class="items-menu">Te ayudamos a organizar tu evento</a>
+                                </li>
+                                <li>
+                                    <a href="./contacto.html" class="items-menu">Contacta con nosotros</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+                            <h5>¿Dudas?</h5>
+                            <ul>
+                                <li>
+                                    <a href="./compras.html" class="items-menu">Mis Reservas/Compras</a>
+                                </li>
+                                <li>
+                                    <a href="./faqs.html" class="items-menu">Dudas Frecuentes</a>
+                                </li>
+                                <li>
+                                    <a href="./mapa-del-sitio.html" class="items-menu">Mapa del sitio</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-12 col-md-2 col-content wow fadeInLeft slow">
+
+                            <h5>Información legal</h5>
+                            <ul>
+                                <li>
+                                    <a href="./condiciones-de-uso.html" class="items-menu">Condiciones de uso</a>
+                                </li>
+                                <li>
+                                    <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                </li>
+                                <li>
+                                    <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                </li>
+                                <li>
+                                    <a href="./privacidad-y-proteccion.html" class="items-menu">Privacidad y protección de datos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="dropdown dropup d-inline-block">
+                                <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div>
+                                        <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                                        <small>Español</small>
+                                    </div>
+                                    <div>
+                                        <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                                    <li><a class="dropdown-item" href="#">Inglés</a></li>
+                                    <li><a class="dropdown-item" href="#">Español</a></li>
+                                    <li><a class="dropdown-item" href="#">Portugues</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-mobil-footer d-block d-lg-none">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Conócenos
+              </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./nosotros.html" class="items-menu">Sobre Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="./puntos-de-venta.html" class="items-menu">Puntos de Venta</a>
+                                    </li>
+                                    <li>
+                                        <a href="./celebraciones.html" class="items-menu">Celebraciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="./cambios-de-eventos.html" class="items-menu">Cambios de Eventos</a>
+                                    </li>
+                                    <li>
+                                        <a href="./empresas.html" class="items-menu">Empresas Colaboradoras</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Eres organizador?
+              </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="">Te ayudamos a vender entradas</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Te ayudamos a organizar tu evento</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">Contacta con nosotros</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Dudas?
+              </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./compras.html" class="items-menu">Mis Reservas/Compras</a>
+                                    </li>
+                                    <li>
+                                        <a href="./faqs.html" class="items-menu">Dudas Frecuentes</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mapa-del-sitio.html" class="items-menu">Mapa del sitio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">Información legal</button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./condiciones-de-uso.html" class="items-menu">Condiciones de uso</a>
+                                    </li>
+                                    <li>
+                                        <a href="./aviso-legal.html" class="items-menu">Aviso legal</a>
+                                    </li>
+                                    <li>
+                                        <a href="./politica-de-cookies.html" class="items-menu">Política de cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="./privacidad-y-proteccion.html" class="items-menu">Privacidad y protección de datos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="logo" src="assets/images/logo-gray.png" alt="logo">
+                <p>Encuentra y compra entradas para los mejores conciertos, eventos deportivos, obras de teatro, festivales y mucho más.</p>
+                <ul>
+                    <li>
+                        <a class="items-menu" href="https://goo.gl/maps/QtyS9b1wYNwEgKRR7">Calle La Palmera N13 Tercero D (Telde, Las Palmas)</a>
+                    </li>
+                    <li>
+                        <a class="items-menu" href="tel:+34 669862535">+34 669862535</a>
+                    </li>
+                    <li>
+                        <a class="items-menu" href="mailto:info@tictra.com">info@tictra.com</a>
+                    </li>
+                </ul>
+                <div id="redes">
+                    <a class="" href="">
+                        <div class="red fb">
+                            <img src="assets/images/icons/fb-gray.png" alt="facebook">
+                        </div>
+                    </a>
+                    <a class="me-2" href="">
+                        <div class="red ig">
+                            <img src="assets/images/icons/ig-gray.png" alt="instagram">
+                        </div>
+                    </a>
+                    <a class="me-2" href="">
+                        <div class="red yt">
+                            <img src="assets/images/icons/yt-gray.png" alt="Youtube">
+                        </div>
+                    </a>
+                    <a class="" href="">
+                        <div class="red ta">
+                            <img src="assets/images/icons/ta-gray.png" alt="tripadvisor">
+                        </div>
+                    </a>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="dropdown dropup d-inline-block">
+                            <a class="btn btn-idiomas d-flex justify-content-between" type="button" id="idiomaButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div>
+                                    <img src="assets/images/icons/idiomas.png" alt="idiomas" class="img-fluid" style="width: 15%;">
+                                    <small>Español</small>
+                                </div>
+                                <div>
+                                    <img class="arrow-down" src="assets/images/icons/angle-down.png" alt="Down">
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu my-0" aria-labelledby="idiomaButton">
+                                <li><a class="dropdown-item" href="#">Inglés</a></li>
+                                <li><a class="dropdown-item" href="#">Español</a></li>
+                                <li><a class="dropdown-item" href="#">Portugues</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer2">
+                <div class="text-center">
+                    <small>
+            <p class="mb-0 wow fadeIn">
+              &copy; 2022 Tictra - Todos los derechos reservados 
+            </p>
+          </small>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/wowjs/wow.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
+    </script>
+   
+</body>
+
+</html>
