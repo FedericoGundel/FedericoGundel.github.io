@@ -14349,6 +14349,7 @@ justify-content:center;
 
 /*SWIPER*/
 .section-swiper{
+    overflow: hidden;
     .swiper-button-next:after,.swiper-button-prev:after{
         color: #0f314d;
     }
