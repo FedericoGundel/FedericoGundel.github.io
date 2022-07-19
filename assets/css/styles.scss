@@ -14349,6 +14349,7 @@ justify-content:center;
 
 
 /*SWIPER*/
+
 .section-swiper{
     overflow: hidden;
     .swiper-button-next:after,.swiper-button-prev:after{
@@ -14375,7 +14376,7 @@ justify-content:center;
             font-size: 2rem;
         }
     }
-    .swiper {
+    #normal_swiper {
         position:relative;
         padding: 3rem 0rem;
         height: 600px;
@@ -14384,7 +14385,7 @@ justify-content:center;
             overflow: hidden;
           }
     }
-    .swiper > .swiper-slide__content {
+    #normal_swiper > .swiper-slide__content {
       position:absolute;
       top:0;
     }
@@ -14465,3 +14466,28 @@ justify-content:center;
     }
     
 }
+
+
+/*CUBE SWIPER*/
+
+#cube_swiper {
+    width: 300px;
+    height: 300px;
+    
+    
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+    
+      .swiper-slide .template {
+       
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+  }
+
+ 

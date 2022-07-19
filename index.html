@@ -140,7 +140,7 @@
               <p class="title text-center mb-5">Algunos de mis trabajos</p>
               <p class="sub text-center">Maquetaciones hechas a partir de formatos AI, realizados con HTML5 + JS + SCSS + Bootstrap5.</p>
                 <!-- Slider main container -->
-                <div class="swiper mb-5">
+                <div id="normal_swiper" class="swiper mb-5">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -153,13 +153,13 @@
                     <div class="swiper-pagination"></div>
 
                     <!-- If we need navigation buttons -->
-                    <div class="item__prev swiper-button-prev"><!--<img src="assets/left.svg" alt="">--></div>
-                    <div class="item__next swiper-button-next"><!--<img src="assets/right.svg" alt="">--></div>
+                    <div class="d-none d-lg-block item__prev swiper-button-prev"><!--<img src="assets/left.svg" alt="">--></div>
+                    <div class="d-none d-lg-block item__next swiper-button-next"><!--<img src="assets/right.svg" alt="">--></div>
 
                    
                 </div>
                 
-
+             
             </div>
         </div>
     </div>
@@ -276,14 +276,15 @@
     wow.init();
   </script>
   <script>
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('#normal_swiper', {
   // Optional parameters
   spaceBetween: 2,
     slidesPerView: 1,
     centeredSlides: true,
     roundLengths: true,
   loop: true,
-
+  
+ 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -300,6 +301,7 @@
     el: '.swiper-scrollbar',
   },
   breakpoints: {
+
       992: {
         slidesPerView: 3
       }
@@ -307,6 +309,7 @@
 });
 
 </script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const dots = document.querySelectorAll(".slider__dot");
