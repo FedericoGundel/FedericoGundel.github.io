@@ -12,9 +12,10 @@
 }
 .section-welcome{
     padding-top: 15vh;
+    height:100vh;
     @media(min-width:580px){
         padding-top: 30vh;
-        height:100vh;
+        
     }
     
     background-image: url(../images/bg-welcome.png);
