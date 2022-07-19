@@ -21,17 +21,20 @@
   <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick.css">
   <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick-theme.css">
   <link rel="stylesheet" href="assets\libs\flag-icon-css\css\flag-icon.min.css">
-  
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   <main>
    <div class="section-welcome mb-5">
-    <div class="top-bar p-3 d-flex align-items-center">
+    <div class="top-bar d-none p-3 d-flex align-items-center">
         <p class="name mb-0">
             Federico Gundel
         </p>
     </div>
     <div class="container">
         
-            <div class="text-welcome text-center text-sm-start">
+            <div class="text-welcome text-center text-sm-start wow fadeInUp">
               <img class="" src="assets/images/foto.png" alt="">
                 <p class="text-center title mb-3">Federico Gundel</p>
                 <p class="text-center sub ms-2">Hola! Bienvenido a mi portfolio</p>
@@ -46,14 +49,14 @@
         
     </div>
    </div>
-   <div id="section-about" class="section-about mb-5">
+   <div id="section-about" class="section-about py-5 mb-5 wow fadeInLeft">
     <div class="container">
         <div class="row">
         
             <div class="col-12">
                 <p class="title mb-5 text-center">Sobre mi</p>
               
-                   <p class="mb-2 text text-center"> Soy estudiante de TUDAI(Tecnicatura universitaria en desarrollo de aplicaciones informáticas), en UNICEN, Tandil. Al comienzo de la pandemia me inicie en el desarrollo freelance conociendo los conceptos básicos de desarrollo web aprendidos en la carrera y algunos cursos realizados, especializado principalmente en Wordpress (utilizando builders como Divi, Elementor, Bakery) y y sistemas MVC +HTML5 + SCSS + Bootstrap5. También he realizado trabajos en React con Next.js. y Laravel. </p>
+                   <p class="mb-2 text text-center"> Soy estudiante de TUDAI(Tecnicatura universitaria en desarrollo de aplicaciones informáticas), en UNICEN, Tandil. Al comienzo de la pandemia me inicie en el desarrollo freelance conociendo los conceptos básicos de desarrollo web aprendidos en la carrera y algunos cursos realizados, especializado principalmente en Wordpress (utilizando builders como Divi, Elementor, Bakery) y sistemas MVC +HTML5 + SCSS + Bootstrap5. También he realizado trabajos en React con Next.js. y Laravel. </p>
                     <p class="mb-2 text text-center">Hoy en dia sigo incursionando mas en el mundo de React y perfeccionando mis habilidades de front. </p>
 
    
@@ -63,7 +66,7 @@
     </div>
    </div>
 
-   <div class="section-works">
+   <div class="section-works d-none wow fadeInLeft">
     <div class="container">
       <p class="title text-center mb-5">Algunos de mis trabajos</p>
       <p class="sub text-center">Maquetaciones hechas a partir de formatos AI, realizados con HTML5 + JS + SCSS + Bootstrap5.</p>
@@ -120,7 +123,40 @@
       </div>
     </div>
   </div>
-  <div class="section-skills mb-5">
+
+
+  <div class="section-swiper wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <p class="title text-center mb-5">Algunos de mis trabajos</p>
+              <p class="sub text-center">Maquetaciones hechas a partir de formatos AI, realizados con HTML5 + JS + SCSS + Bootstrap5.</p>
+                <!-- Slider main container -->
+                <div class="swiper mb-5">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img class="template" src="assets/images/crypto.png" alt=""><div class="overlay"><a href="./cryptosecurity" class="m-0 btn-underline-from-center">Ver template <img class="eye" src="assets/images/eye.svg" alt=""></a></div></div>
+                        <div class="swiper-slide"><img class="template" src="assets/images/nucleo.png" alt=""><div class="overlay"><a href="./nucleo" class="m-0 btn-underline-from-center">Ver template <img class="eye" src="assets/images/eye.svg" alt=""></a></div></div>
+                        <div class="swiper-slide"><img class="template" src="assets/images/tictra.png" alt=""><div class="overlay"><a href="./tictra" class="m-0 btn-underline-from-center">Ver template <img class="eye" src="assets/images/eye.svg" alt=""></a></div></div>
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="item__prev swiper-button-prev"><!--<img src="assets/left.svg" alt="">--></div>
+                    <div class="item__next swiper-button-next"><!--<img src="assets/right.svg" alt="">--></div>
+
+                   
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="section-skills mb-5 wow fadeInLeft">
     <div class="container">
       <p class="title text-center mb-5">Tecnologías que utilizo habitualmente en mis trabajos</p>
       <div class="iconos d-flex justify-content-center align-items-center flex-nowrap mb-5">
@@ -183,9 +219,9 @@
         <div class="col-12">
           <p class="title text-center mb-5">Habilidades</p>
           
-          <p class="mb-2 text text-center text-sm-start"><strong>Gestión de multiples proyectos:</strong>  al trabajar, tanto freelance como bajo relacion de dependencia he adquirido ritmo y organizacion de trabajo debido a la cantidad de proyectos con los que estoy acostumbrado a contribuir/desarrollar.</p>
+          <p class="mb-2 text text-center text-sm-start"><strong>Gestión de multiples proyectos:</strong>  al trabajar, tanto freelance como bajo relacion de dependencia he adquirido ritmo y organizacion de trabajo debido a la cantidad de proyectos en los que estoy acostumbrado a contribuir/desarrollar.</p>
           
-          <p class="mb-2 text text-center text-sm-start"><strong>Retroactividad:</strong>  Con el tiempo no solo ha mejorado la calidad de mi trabajo, sino el tiempo que me lleva hacerlo.</p>
+          
           
           <p class="mb-2 text text-center text-sm-start"><strong>Comunicación con el cliente:</strong>  Estoy acostumbrado a comunicarme con los clientes directamente y poseo un nivel de ingles técnico avanzado.</p>
           
@@ -212,6 +248,7 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
     $(function() {
     $('a[href*=#]').on('click', function(e) {
@@ -230,6 +267,38 @@
     })
     wow.init();
   </script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  spaceBetween: 2,
+    slidesPerView: 1,
+    centeredSlides: true,
+    roundLengths: true,
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+      992: {
+        slidesPerView: 3
+      }
+    }
+});
+
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const dots = document.querySelectorAll(".slider__dot");

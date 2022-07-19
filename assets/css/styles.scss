@@ -12909,12 +12909,12 @@ body {
     z-index: -1;
     left: 51%;
     right: 51%;
-    bottom: -3px;
+    bottom: 0px;
     height: 1px;
     transition-property: left, right;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
-    background-color: #ba87b0;
+    background-color: white;
 }
 
 .btn-underline-from-center:hover:before,
@@ -14343,4 +14343,120 @@ justify-content:center;
 
 .content-slider .carousel-material-next {
     right: 1rem;
+}
+
+
+
+/*SWIPER*/
+.section-swiper{
+    .swiper-button-next:after,.swiper-button-prev:after{
+        color: #0f314d;
+    }
+    .swiper-button-next{
+        right:0;
+    }
+    .swiper-button-prev{
+ left:0;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #0f314d;
+    }
+    .swiper-pagination{
+        bottom:0!important;
+    }
+    .title{
+        color:#0f314d;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1;
+        @media(min-width:580px){
+            font-size: 2rem;
+        }
+    }
+    .swiper {
+        position:relative;
+        padding: 3rem 0rem;
+        height: 600px;
+        overflow: visible;
+        @media(min-width:992px){
+            overflow: hidden;
+          }
+    }
+    .swiper > .swiper-slide__content {
+      position:absolute;
+      top:0;
+    }
+    
+    .swiper-slide {
+        background: #4D4D4D;
+        
+      display:flex;
+      box-shadow: 1px 2px 25px 0px rgba(0,0,0,0.33);
+      border-radius: 15px;
+      overflow: hidden;
+      align-items: center;
+      justify-content:center;
+      transition:all 200ms linear;
+      transform: scale(0.8)!important;
+      position: relative;
+      .overlay{
+        display: none;
+        cursor: pointer;
+      }
+      img.template{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        opacity: .7;
+        transition: all .4s ease-in-out;
+      }
+      &.swiper-slide-active{
+        transform: scale(1)!important;
+        img.template{
+            opacity:1;
+        }
+        .overlay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #0f314db5;
+          opacity: 0;
+          transition: all .4s ease-in-out;
+          a{
+             color: white;
+             text-decoration: none;
+             font-size: 1.5rem;
+             .eye{
+                transform: translateX(-200%);
+                opacity: 0;
+                transition: all .3s ease-in-out;
+             }
+             &:hover{
+                .eye{
+                    transform: translateX(0%);
+                opacity: 1;
+                }
+             }
+          }
+         }
+         &:hover{
+             .overlay{
+               
+               opacity: 1;
+               
+              } 
+         }
+      }
+     
+
+  
+    }
+    .swiper-slide__content {
+      height: 300px;
+    }
+    
 }

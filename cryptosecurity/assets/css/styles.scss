@@ -12056,11 +12056,19 @@ body {
 }
 
 .banner-menu {
-    height: 80vh;
+    height: 90vh;
     position: relative;
     display: flex;
     align-items: center;
+    @media(max-width:768px){
+        padding-top: 0px;
+        height: 120vh;
+        svg{
+            height:300px;
+        }
+    }
 }
+
 
 .banner-menu .placa-banner {
     position: absolute;
@@ -12103,8 +12111,11 @@ body {
 }
 
 .banner-menu .contenedor-slide {
-    margin-top: 5rem;
+    margin-top: 0rem;
     width: 100%;
+    @media (min-width: 768px) {
+        margin-top: 5rem;
+    }
 }
 
 @media (min-width: 768px) {
